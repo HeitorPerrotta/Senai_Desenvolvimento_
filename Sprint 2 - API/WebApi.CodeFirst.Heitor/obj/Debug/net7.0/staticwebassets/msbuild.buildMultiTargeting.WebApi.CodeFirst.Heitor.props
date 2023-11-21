@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WebApi.CodeFirst.Heitor.props" />
+</Project>

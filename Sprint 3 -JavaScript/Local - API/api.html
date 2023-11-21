@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de API com JavaScript</title>
+</head>
+
+<body>
+    <form onsubmit="salvarContato(event)">
+
+        <label for="cep">CEP: </label>
+        <input type="number" placeholder="Digite o CEP:" id="cep" onblur="chamarApi()" autocomplete="off">
+        <!-- a propriedade autocomplete define se serão exibidas opções para autocompletar o valor do campo -->
+        <!-- onblur="" evento acionado ao abandonar o elemento input -->
+        <span id="not-found"></span>
+        <br><br>
+
+        <label for="endereco">Endereço: </label>
+        <input type="text" placeholder="..." id="endereco">
+        <br><br>
+
+        <label for="numero">Numero: </label>
+        <input type="text" placeholder="..." id="numero">
+        <br><br>
+
+        <label for="cidade">Cidade: </label>
+        <input type="text" placeholder="..." id="cidade">
+        <br><br>
+
+        <label for="bairro">Bairro: </label>
+        <input type="text" placeholder="..." id="bairro">
+        <br><br>
+
+        <label for="estado">Estado: </label>
+        <input type="text" placeholder="..." id="estado">
+        <br><br>
+        
+        <label for="nome">Nome: </label>
+        <input type="text" placeholder="..." id="nome">
+        <br><br>
+
+        <label for="telefone">Telefone: </label>
+        <input type="text" placeholder="..." id="telefone">
+        <br><br>
+
+        <button>Salvar Contato</button>
+
+        <!-- <button onclick="chamarApi()">Ok</button> Não irá precisar do button por conta do onblur -->
+    </form>
+
+    <script>
+        const urlLocal = "http://localhost:3000/contatos";
+
+        async function salvarContato(e) {
+            e.preventDefault();
+
+            //pegar os dados do formulário e guardar diretamente em um objeto
+            let contato = {
+                "nome": document.getElementById("nome").value,
+                "telefone": document.getElementById("telefone").value,
+                "cep": document.getElementById("cep").value,
+                "endereco": document.getElementById("endereco").value,
+                "numero": document.getElementById("numero").value,
+                "cidade": document.getElementById("cidade").value,
+                "bairro": document.getElementById("bairro").value,
+                "estado": document.getElementById("estado").value
+            }
+
+            const objDados = {nome, telefone, cep, endereco, numero, cidade, bairro, estado};
+
+            //sempre que for fazer uma chamada à api faça um try catch
+            try {
+                //promessa retornada pelo fetch
+
+                const promisse = await fetch(urlLocal, { // o método fetch recebe o endereço da api, e opcionalmente um objeto json com as informações para a chamada 
+                    body: JSON.stringify(contato), // converte um objeto javascript em json
+                    headers: { "Content-Type": "application/json" },
+                    method: "post"
+                });
+
+            } catch (erro) {
+                console.log("Deu Ruim: " + erro);
+            }
+
+        }//fim da função cadastrar
+
+        async function chamarApi() {
+            let cep = document.getElementById("cep").value;
+            const url = `https://viacep.com.br/ws/${cep}/json/`;
+
+            try {
+                const retorno = await fetch(url);
+                const endereco = await retorno.json();
+
+                console.log(endereco);
+
+                document.getElementById("not-found").innerText = "";
+
+                //tá ficando grande demais então chama uma função
+                exibirEndereco(endereco);
+
+            } catch (error) {
+                document.getElementById("not-found").innerText = "Digite um cep válido";
+
+                // redefine o valor dos campos
+                redefineValores();
+
+                // alert('O endereço digitado não foi encontrado');
+            }
+        }
+
+        function exibirEndereco(informacoesEndereco) {
+            const { logradouro, bairro, localidade, uf, ...resto } = informacoesEndereco;
+
+            document.getElementById("endereco").value = logradouro;
+            document.getElementById("numero").value = complemento;
+            document.getElementById("cidade").value = localidade;
+            document.getElementById("bairro").value = bairro;
+            document.getElementById("estado").value = uf;
+        }
+
+        function redefineValores() {
+            document.getElementById("endereco").value = "...";
+            document.getElementById("numero").value = "...";
+            document.getElementById("cidade").value = "...";
+            document.getElementById("bairro").value = "...";
+            document.getElementById("estado").value = "...";
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!-- //No JSON -> aparece objetos json que sibolizam as rotas da api local
+ {
+    nome da rota/tabela
+    "imc": 
+    [
+      {
+        campos da tabela
+        "id": 1,
+        "nome": "Heitor",
+        "idade": 17,
+        "altura": 1.80,
+        "peso": 100
+      }
+    ]
+  } -->

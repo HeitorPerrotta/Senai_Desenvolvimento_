@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai.inlock.webApi</name>
+    </assembly>
+    <members>
+        <member name="M:senai.inlock.webApi.Controllers.EstudioController.Get">
+            <summary>
+            Endpoint que acessa o método de listar os Estudios
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Controllers.EstudioController.Post(senai.inlock.webApi.Domains.EstudioDomain)">
+            <summary>
+            Endpoint que acessa o método de cadastrar os Estudios
+            </summary>
+            <param name="novoEstudio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Controllers.EstudioController.Delete(System.Int32)">
+            <summary>
+            EndPoint que acessa o metodo para deletar pelo ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Controllers.JogoController.Get">
+            <summary>
+            Endpoint que acessa o método de listar os Jogos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Controllers.JogoController.Post(senai.inlock.webApi.Domains.JogoDomain)">
+            <summary>
+            Endpoint que acessa o método de cadastrar os Jogos
+            </summary>
+            <param name="novoJogo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:senai.inlock.webApi.Controllers.JogoController.Delete(System.Int32)">
+            <summary>
+            EndPoint que acessa o metodo para deletar pelo ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

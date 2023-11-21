@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+</head>
+
+<body>
+    <h1>Simple Calc</h1>
+    <form onsubmit="calcular()">
+        <label for="numero1">Número 1</label>
+        <input type="number" placeholder="Primeiro número" id="numero1">
+        <br><br>
+
+        <label for="numero2">Número 2</label>
+        <input type="number" placeholder="Segundo número" id="numero2">
+        <br><br>
+
+        <label for="operacao">operação</label>
+        <select name="" id="operacao">
+            <option value="">Selecione</option>
+            <option value="+">Adição</option>
+            <option value="-">Subtração</option>
+            <option value="/">Divisão</option>
+            <option value="*">Multiplicação</option>
+        </select>
+        
+        <p>Resultado: <strong id="resultado">???</strong></p>
+
+        <button>Calcular</button>
+    </form>  
+
+    <script src="./Pasta de scripts/Scripts.Js"></script>
+</body>
+
+</html>

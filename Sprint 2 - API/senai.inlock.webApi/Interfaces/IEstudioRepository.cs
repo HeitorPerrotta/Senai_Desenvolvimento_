@@ -1,0 +1,1 @@
+﻿using senai.inlock.webApi.Domains;namespace senai.inlock.webApi.Interfaces{    public interface IEstudioRepository    {        void Cadastrar(EstudioDomain NovoEstudio);        void Deletar(int id);        List<EstudioDomain> ListarTodos();    }}
