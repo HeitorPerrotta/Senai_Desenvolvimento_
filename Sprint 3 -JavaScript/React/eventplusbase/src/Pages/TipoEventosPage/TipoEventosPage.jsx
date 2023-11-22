@@ -92,7 +92,6 @@ const TipoEventosPage = () => {
   async function showUpdateForm(id) {
     try {
       setFrmEdit(true);
-
       //fazer o get by id
       const retorno = await api.get(`/TiposEvento/${id}`);
       // preencher o titulo no state
