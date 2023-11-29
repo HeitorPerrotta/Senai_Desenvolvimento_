@@ -8,9 +8,12 @@ import NextEvent from "../../Components/NextEvent/NextEvent";
 import Title from "../../Components/Title/Title";
 import Container from "../../Components/Container/Container";
 import api from "../../Services/Service";
+import { UserContext } from "../../context/AuthContext";
 
 const HomePage = () => {
-  
+  const {userData} = useState(UserContext)
+
+  console.log(userData);
     useEffect(()=> {
       // chamar a api
       async function getProximosEventos() {
