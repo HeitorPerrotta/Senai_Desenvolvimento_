@@ -8,14 +8,21 @@ import loginImage from "../../assets/images/login.svg";
 
 import "./LoginPage.css";
 import { UserContext, userDecodeToken } from "../../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+  const navigate = useNavigate()
   const [user, setUser] = useState({ email: "", senha: "" });
   const { userData, setUserData } = useContext(UserContext);
 
+  useEffect(() => {
+    if(userData.name) navigate("/")
+  })
+
   async function handleSubmit(e) {
     e.preventDefault();
-    if (user.email.length >= 3 && user.senha.length > 3) {
+    
+    if (user.email.trim().length >= 3 && user.senha.trim().length >= 3) {
       //chamar a Api
       try {
         const promise = await api.post("/Login", {
@@ -26,12 +33,13 @@ const LoginPage = () => {
 
         const userFullToken = userDecodeToken(promise.data.token);
         setUserData(userFullToken);//guardamentação dos dados decodificados (playload)
-        localStorage.selItem("token", JSON.stringify(userFullToken))
+        localStorage.setItem("token", JSON.stringify(userFullToken));
+        navigate("/")
       } catch (error) {
         alert(
           "Usuário ou Senha inválidos ou conexão com a internet foi interrompida"
         );
-        console.log(user);
+
       }
     } else {
       alert("Preencha os campos corretamente");
@@ -60,6 +68,7 @@ const LoginPage = () => {
               name="login"
               required={true}
               value={user.email}
+              placeholder="Email"
               manipulationFunction={(e) => {
                 setUser({
                   ...user,
@@ -75,6 +84,7 @@ const LoginPage = () => {
               required={true}
               value={user.senha}
               onChange={(e) => {}}
+              placeholder="*****"
               manipulationFunction={(e) => {
                 setUser({
                   ...user,
