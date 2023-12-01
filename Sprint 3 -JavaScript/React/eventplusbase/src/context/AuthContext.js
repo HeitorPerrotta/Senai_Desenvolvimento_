@@ -4,12 +4,12 @@ import { createContext } from "react";
 export const UserContext = createContext(null);
 
 export const userDecodeToken = (theToken) => {
-    const decoded = jwtDecode(theToken);//retornamentação da payload
+  const decoded = jwtDecode(theToken); //retornamentação da payload
 
-return { 
-    perfil: decoded.role,
+  return {
+    role: decoded.role,
     name: decoded.name,
     UserId: decoded.jti,
-    token: theToken
-}
-}
+    token: theToken,
+  };
+};
