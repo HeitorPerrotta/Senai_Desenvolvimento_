@@ -1,6 +1,6 @@
 import React from 'react';
 import './NextEvent.css';
-import { dateFormatDbToView } from "../../Utils/stringFunction";
+import { dateFormateDbToView } from "../../Utils/stringFunction";
 
 import { Tooltip } from 'react-tooltip'
 
@@ -24,7 +24,7 @@ const NextEvent = ( {title, description, eventDate, idEvento} ) => {
                 {description.substr(0, 16)} ...
             </p>
             <p className='event-card__description'>
-                {dateFormatDbToView(eventDate)}
+                {dateFormateDbToView(eventDate)}
             </p>
 
             <a  

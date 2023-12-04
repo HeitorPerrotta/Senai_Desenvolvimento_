@@ -77,11 +77,11 @@ export const Select = ({
       onChange={manipulationFunction}
       value={defaultValue}
     >
-      <option value="">Selecione uma opção</option>
+      <option value="">Meus Eventos</option>
       {dados.map((opt) => {
         return (
-          <option key={opt.idTipoEvento} value={opt.idTipoEvento}>
-            {opt.titulo}
+          <option key={opt.value} value={opt.value}>
+            {opt.text}
           </option>
         );
       })}

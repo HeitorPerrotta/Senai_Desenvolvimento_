@@ -23,6 +23,7 @@ const EventosPage = () => {
   const [instituicao, setInstituicao] = useState([]);
   const [idTipoEvento, setIdTipoEvento] = useState([]);
   const [Events, setEvents] = useState([]);
+  const [idEvento, setIdEvento] = useState(null)
   const [typeEvents, setTypeEvents] = useState([]);
 
 
@@ -93,11 +94,62 @@ const EventosPage = () => {
   }
 
   //ATUALIZACAO DOS DADOS
-  async function handleUpdate(e) {}
+  
+  async function handleUpdate(e) {
+  //   e.preventDefault();
+  //   try {
+  //     const retorno = await api.put(`/Evento/` + idEvento, {
+  //       nomeEvento: nomeEvento,
+  //       descricao: description,
+  //       dataEvento: dataEvento,
+  //       idTipoEvento: idTipoEvento,
+  //       idInstituicao: instituicao
+  //     });
 
-  function editActionAbort() {}
+  //     setNotifyUser({
+  //       titleNote: "Sucesso",
+  //       textNote: `Atualizado com sucesso!`,
+  //       imgIcon: "success",
+  //       imgAlt:
+  //         "Imagem de ilustração de sucesso. Moça segurando um balão com símbolo de confirmação ok.",
+  //       showMessage: true,
+  //     });
 
-  async function showUpdateForm(id) {}
+  //     setNomeEvento(""); //limpa a variavel
+  //     setDescription("");
+  //     setDataEvento("");
+  //     setInstituicao("");
+  //     setIdTipoEvento("");
+  //     setFrmEdit(false);
+
+  //     //atualizar o state (api get)
+  //     const retornoGet = await api.get(`/Evento`);
+  //     setEvents(retornoGet.data); //atualiza o state da tabela
+  //     editActionAbort(); //limpa o state do titulo e id
+  //   } catch (error) {
+  //     alert("Deu ruim no update");
+  //   }
+  }
+
+  function editActionAbort() {
+  //   setFrmEdit(false);
+  //   setDataEvento("");
+  //   setNomeEvento("");
+  //   setDescription("");
+  //   setInstituicao("");
+  //   setIdTipoEvento("");
+  //   setEvents("");
+  }
+
+  async function showUpdateForm(id) {
+  //   setFrmEdit(true);
+  //   setDataEvento(id.dataEvento.slice(0, 10));
+  //   setNomeEvento(id.titulo);
+  //   setDescription(id.descricao);
+  //   setInstituicao(id.idInstituicao);
+  //   setIdTipoEvento(id.idTipoEvento);
+  //   setEvents(id.idEvento);
+  }
   
   //deletamentação
   async function handleDelete(id) {

@@ -5,12 +5,14 @@ import { PrivateRoute } from "../Routes/PrivateRoute";
 // import dos componentes de página
 import HomePage from "../Pages/HomePage/HomePage";
 import TipoEventosPage from "../Pages/TipoEventosPage/TipoEventosPage";
+
 import EventosPage from "../Pages/EventosPage/EventosPage";
 import LoginPage from "../Pages/LoginPage/LoginPage";
 import TestePage from "../Pages/TestePage/TestePage";
 
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
+import EventosAlunoPage from "../Pages/EventosAlunoPage/EventosAlunoPage";
 
 const Rotas = () => {
   return (
@@ -40,7 +42,7 @@ const Rotas = () => {
           path="/eventos-aluno"
           element={
             <PrivateRoute redirectTo="/">
-              <EventosPage />
+              <EventosAlunoPage />
             </PrivateRoute>
           }
         />
