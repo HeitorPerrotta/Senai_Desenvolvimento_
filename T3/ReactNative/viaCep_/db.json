@@ -1,0 +1,13 @@
+{
+    "cep" : [
+        {
+            "id" : "00000-000",
+            "logradouro" : "logradouro",
+            "bairro" : "bairro",
+            "localidade" : "localidade",
+            "estado" : "estado",
+            "uf" : "SP"
+        }
+    ]
+
+}
