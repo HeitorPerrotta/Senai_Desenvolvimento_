@@ -1,32 +1,45 @@
-import { Button, Text } from "react-native"
-import { Container } from "../../Components/Container/Style"
-import { Logo } from "../../Components/Logo/Style"
-import { Title } from "../../Components/Title/Style"
-import { Input } from "../../Components/Input/Style"
+import { Container } from "../../Components/Container/Style";
+import { Logo } from "../../Components/Logo/Style";
+import { Title } from "../../Components/Title/Style";
+import { Input } from "../../Components/Input/Style";
+import { LinkMedium } from "../../Components/Link/Style";
+import {
+  Button,
+  ButtonGoogle,
+  ButtonTitleGoogle,
+  ButtonTitle,
+} from "../../Components/Button/Style";
+import { ActivityIndicator, TouchableOpacity } from "react-native";
+import { useState } from "react";
 
 export const Login = () => {
-    return (
-        <Container>
-            <Logo source={require("../../assets/VitalHub_Logo.png")}/>
+  const [loading, setLoading] = useState();
+  return (
+    <Container>
+      <Logo source={require("../../assets/VitalHub_Logo.png")} />
 
-            <Title>Entrar ou criar conta</Title>
+      <Title>Entrar ou criar conta</Title>
 
-            <Input/>
-            <Input/>
+      <Input placeholder="Usuário ou E-mail" />
+      <Input placeholder="Senha" />
 
-            {/* <LinkMedium>Esqueceu sua senha?</LinkMedium>
+      <LinkMedium>Esqueceu sua senha?</LinkMedium>
 
-            <Button>
-                <ButtonTitle>Entrar</ButtonTitle>
-            </Button>
+      <Button>
+        <TouchableOpacity onPress={() => setLoading(!loading)}>
+          <ButtonTitle>Entrar</ButtonTitle>
 
-            <ButtonGoogle>
-                <ButtonTitleGoogle>Entra com Google</ButtonTitleGoogle>
-            </ButtonGoogle>
+          {loading && <ActivityIndicator color="#FFF" size={24} />}
+        </TouchableOpacity>
+      </Button>
 
-            <ContentAccount>
-                <TextAccount>Não tem conta ? Crie uma agora!</TextAccount>
-            </ContentAccount> */}
-        </Container>
-    )
-}
+      <ButtonGoogle>
+        <ButtonTitleGoogle>Entra com Google</ButtonTitleGoogle>
+      </ButtonGoogle>
+
+      <ContentAccount>
+        <TextAccount>Não tem conta ? Crie uma agora!</TextAccount>
+      </ContentAccount>
+    </Container>
+  );
+};
