@@ -11,10 +11,10 @@ export const TextAccount = styled.Text`
     color: #4E4B59;
 `
 
-// export const LinkBold = styled(TextAccount)`
-//     color: #4D659D;
-//     text-decoration: underline;
-// `
+export const LinkBold = styled(TextAccount)`
+    color: #4D659D;
+    text-decoration: underline;
+`
 
 export const ContentCodigo = styled(ContentAccount)`
     width: 90%;

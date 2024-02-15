@@ -15,6 +15,7 @@ import { RecuperarSenha } from "./src/Screen/Recuperar Senha/RecuperarSenha";
 import { VerficarEmail } from "./src/Screen/Verificar Email/VerificarEmail";
 import { RedefinirSenha } from "./src/Screen/Redefinir Senha/RedefinirSenha";
 import { Cadastro } from "./src/Screen/Cadastro/Cadastro";
+import { Perfil } from "./src/Screen/Perfil/Perfil";
 
 const Stack = createNativeStackNavigator();
 
@@ -67,6 +68,12 @@ export default function App() {
           name="Cadastro"
           component={Cadastro}
           options={{ title: "Cadastro" }}
+        />
+
+        <Stack.Screen
+          name="Perfil"
+          component={Perfil}
+          options={{ title: "Perfil" }}
         />
       </Stack.Navigator>
     </NavigationContainer>

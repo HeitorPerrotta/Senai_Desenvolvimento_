@@ -1,19 +1,12 @@
+import { Button, ButtonGoogle } from "../../Components/Button/Style";
 import { Container } from "../../Components/Container/Style";
-import { Logo } from "../../Components/Logo/Style";
-import { Title } from "../../Components/Title/Style";
+import { ContentAccount, LinkBold, TextAccount } from "../../Components/ContentAccount/Style";
 import { Input } from "../../Components/Input/Style";
 import { LinkMedium } from "../../Components/Link/Style";
-import {
-  Button,
-  ButtonGoogle,
-  ButtonTitleGoogle,
-  ButtonTitle,
-} from "../../Components/Button/Style";
-import { ActivityIndicator, TouchableOpacity } from "react-native";
-import { useState } from "react";
+import { Logo } from "../../Components/Logo/Style";
+import { ButtonTitle, ButtonTitleGoogle, Title } from "../../Components/Title/Style";
 
 export const Login = () => {
-  const [loading, setLoading] = useState();
   return (
     <Container>
       <Logo source={require("../../assets/VitalHub_Logo.png")} />
@@ -21,24 +14,24 @@ export const Login = () => {
       <Title>Entrar ou criar conta</Title>
 
       <Input placeholder="Usuário ou E-mail" />
+
       <Input placeholder="Senha" />
 
       <LinkMedium>Esqueceu sua senha?</LinkMedium>
 
       <Button>
-        <TouchableOpacity onPress={() => setLoading(!loading)}>
-          <ButtonTitle>Entrar</ButtonTitle>
-
-          {loading && <ActivityIndicator color="#FFF" size={24} />}
-        </TouchableOpacity>
+        <ButtonTitle>Entrar</ButtonTitle>
       </Button>
 
       <ButtonGoogle>
-        <ButtonTitleGoogle>Entra com Google</ButtonTitleGoogle>
+        {/* <AntDesign name="google" size={18} color="#496bba" /> */}
+        <ButtonTitleGoogle>Entrar com Google</ButtonTitleGoogle>
       </ButtonGoogle>
 
       <ContentAccount>
-        <TextAccount>Não tem conta ? Crie uma agora!</TextAccount>
+        <TextAccount>
+          Não tem conta? <LinkBold>Crie uma conta agora!</LinkBold>
+        </TextAccount>
       </ContentAccount>
     </Container>
   );
