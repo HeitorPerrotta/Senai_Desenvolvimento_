@@ -54,7 +54,7 @@ export const Perfil = () => {
         <BoxInput>
           <CepCidadeInput placeholder={"00000-000"} />
 
-          <CepCidadeInput placeholder={"Sampas-SP"} />
+          <CepCidadeInput placeholder={"Sanca-SP"} />
         </BoxInput>
 
         <Button>

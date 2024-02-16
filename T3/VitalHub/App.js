@@ -16,6 +16,7 @@ import { VerficarEmail } from "./src/Screen/Verificar Email/VerificarEmail";
 import { RedefinirSenha } from "./src/Screen/Redefinir Senha/RedefinirSenha";
 import { Cadastro } from "./src/Screen/Cadastro/Cadastro";
 import { Perfil } from "./src/Screen/Perfil/Perfil";
+import { ConsultasPaciente } from "./src/Screen/ConsultasPaciente/ConsultasPaciente";
 
 const Stack = createNativeStackNavigator();
 
@@ -74,6 +75,12 @@ export default function App() {
           name="Perfil"
           component={Perfil}
           options={{ title: "Perfil" }}
+        />
+
+        <Stack.Screen
+          name="Consultas Paciente"
+          component={ConsultasPaciente}
+          options={{ title: "Consultas Paciente" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
