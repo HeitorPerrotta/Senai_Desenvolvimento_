@@ -6,6 +6,6 @@ import CalendarStrip from "react-native-calendar-strip";
 export const StyledCalendarStrip = styled(CalendarStrip)`
   height: 100px;
   width: 100%;
-  margin: 100px 0px;
+  margin: 20px 0px;
   padding: 0px;
 `

@@ -33,6 +33,13 @@ export const ContainerHeader = styled(LinearGradient).attrs({
   box-shadow: 0px 4px 15px #00000014;
 
   align-items: center;
-  
+
+  justify-content: space-between;
+`;
+
+export const FilterAppointment = styled.View`
+  width: 90%;
+  margin: 30px;
+  flex-direction: row;
   justify-content: space-between;
 `;

@@ -2,7 +2,7 @@ import { ContainerHeader } from "../Container/Style";
 import { BoxUser, DataUser, ImageUser, NameUser, TextDefault } from "./Style";
 import { MaterialIcons } from "@expo/vector-icons";
 
-export const Header = () => {
+export const HeaderContainer = () => {
   return (
     <ContainerHeader>
       <BoxUser>
