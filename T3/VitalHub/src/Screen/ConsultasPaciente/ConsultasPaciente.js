@@ -1,45 +1,78 @@
 import { useState } from "react";
 import { Container, FilterAppointment } from "../../Components/Container/Style";
-import { StyledCalendarStrip } from "../../Components/Calendar/Style";
 import { BtnListAppointment } from "../../Components/BtnListAppointment/Index";
 import { HeaderContainer } from "../../Components/Header/Index";
+import { AppointmentCard } from "../../Components/AppointmentCard/Index";
+import { ListComponent } from "../../Components/List/Style";
+import { CancelModal } from "../../Components/CancellationModal/Index";
+import CalendarList from "../../Components/Calendar/CalendarHome";
+
+const Consultas = [
+  { id: 1, nome: "Carlos", situacao: "pendente"  },
+  { id: 2, nome: "Carlos", situacao: "realizado" },
+  { id: 3, nome: "Carlos", situacao: "cancelado" },
+  { id: 4, nome: "Carlos", situacao: "realizado" },
+  { id: 5, nome: "Carlos", situacao: "cancelado" },
+];
 
 export const ConsultasPaciente = () => {
   const [statusLista, setStatusLista] = useState("pendente");
+
+  const [showModalCancel, setShowModalCancel] = useState(false);
+  const [showModalAppointment, setShowModalAppointment] = useState(false);
   return (
     <Container>
-      <HeaderContainer/>
+      <HeaderContainer />
 
       {/* Calendario */}
-      <StyledCalendarStrip />
+      <CalendarList />
 
       {/* Botoes */}
       <FilterAppointment>
         {/* Botao Agendadas */}
-        <BtnListAppointment 
-            textButton={"Agendadas"}
-            clickButton={statusLista === "agendadas"}
-            onPress={() => setStatusLista ("agendadas")} 
-
+        <BtnListAppointment
+          textButton={"Agendadas"}
+          clickButton={statusLista === "pendente"}
+          onPress={() => setStatusLista("pendente")}
         />
 
         {/* Botao Realizadas */}
-        <BtnListAppointment 
-            textButton={"Realizadas"}
-            clickButton={statusLista === "realizadas"}
-            onPress={() => setStatusLista ("realizadas")} 
+        <BtnListAppointment
+          textButton={"Realizadas"}
+          clickButton={statusLista === "realizado"}
+          onPress={() => setStatusLista("realizado")}
         />
 
         {/* Botao Canceladas */}
-        <BtnListAppointment 
-            textButton={"Canceladas"}
-            clickButton={statusLista === "canceladas"}
-            onPress={() => setStatusLista ("canceladas")} 
-
+        <BtnListAppointment
+          textButton={"Canceladas"}
+          clickButton={statusLista === "cancelado"}
+          onPress={() => setStatusLista("cancelado")}
         />
       </FilterAppointment>
 
-      {/* Cards */}
+      {/* Lista */}
+      <ListComponent
+        data={Consultas}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) =>
+          statusLista == item.situacao && (
+            <AppointmentCard
+              situacao={item.situacao}
+              onPressCancel={() => setShowModalCancel(true)}
+              // onPressAppointment={() => setShowModalAppointment(true)}
+            />
+          )
+        }
+        showsVerticalScrollIndicator={false}
+      />
+
+      {/* modal de cancelar */}
+
+      <CancelModal
+        visible={showModalCancel}
+        setShowModalCancel={setShowModalCancel}
+      />
     </Container>
   );
 };

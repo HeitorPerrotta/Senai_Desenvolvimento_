@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const Title = styled.Text`
   font-size: 20px;
-  font-family: "MontserratAlternates_600SemiBold;"
-  j;
+  font-family: "MontserratAlternates_600SemiBold";
 `;
 
 export const SimpleText = styled.Text`

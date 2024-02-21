@@ -10,6 +10,8 @@ import {
   MontserratAlternates_500Medium,
   Quicksand,
   Quicksand_500Medium,
+  Quicksand_600SemiBold,
+  Quicksand_400Regular,
 } from "@expo-google-fonts/montserrat-alternates";
 import { RecuperarSenha } from "./src/Screen/Recuperar Senha/RecuperarSenha";
 import { VerficarEmail } from "./src/Screen/Verificar Email/VerificarEmail";
@@ -26,6 +28,8 @@ export default function App() {
     MontserratAlternates_500Medium,
     Quicksand,
     Quicksand_500Medium,
+    Quicksand_600SemiBold,
+    Quicksand_400Regular
   });
 
   if (!fontsLoaded && !fontsError) {

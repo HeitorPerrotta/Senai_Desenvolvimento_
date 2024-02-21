@@ -6,7 +6,7 @@ export const HeaderContainer = () => {
   return (
     <ContainerHeader>
       <BoxUser>
-        <ImageUser source={{ uri: "https://github.com/kauameloo.png" }} />
+        <ImageUser source={{ uri: "https://github.com/Carlos-Augusto-Roque.png" }} />
         <DataUser>
           <TextDefault> Bem Vindo !</TextDefault>
           <NameUser>Dr.Fulano</NameUser>

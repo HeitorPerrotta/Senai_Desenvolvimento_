@@ -2,9 +2,7 @@ import { StyleSheet } from 'react-native';
 
 // import lib moment
 import moment from "moment";
-
-// import component StyledCalendarStrip
-import { StyledCalendarStrip } from './Calendar';
+import { StyledCalendarStrip } from './Style';
 
 //component CalendarList
 const CalendarList = () => {
