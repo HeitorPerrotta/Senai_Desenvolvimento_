@@ -46,4 +46,9 @@ export const TextBox = styled.Text`
   justify-content: center;
 `;
 
+export const CardSubTitle = styled.Text`
+  font-size: 14px;
+  font-family: "Quicksand_600SemiBold";
+  color: #8c8a97;
+`;
 

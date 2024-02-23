@@ -6,9 +6,10 @@ import { AppointmentCard } from "../../Components/AppointmentCard/Index";
 import { ListComponent } from "../../Components/List/Style";
 import { CancelModal } from "../../Components/CancellationModal/Index";
 import CalendarList from "../../Components/Calendar/CalendarHome";
+import { AppointmentModal } from "../../Components/AppointmentModal/Index";
 
 const Consultas = [
-  { id: 1, nome: "Carlos", situacao: "pendente"  },
+  { id: 1, nome: "Carlos", situacao: "pendente" },
   { id: 2, nome: "Carlos", situacao: "realizado" },
   { id: 3, nome: "Carlos", situacao: "cancelado" },
   { id: 4, nome: "Carlos", situacao: "realizado" },
@@ -60,7 +61,7 @@ export const ConsultasPaciente = () => {
             <AppointmentCard
               situacao={item.situacao}
               onPressCancel={() => setShowModalCancel(true)}
-              // onPressAppointment={() => setShowModalAppointment(true)}
+              onPressAppointment={() => setShowModalAppointment(true)}
             />
           )
         }
@@ -71,7 +72,13 @@ export const ConsultasPaciente = () => {
 
       <CancelModal
         visible={showModalCancel}
-        setShowModalCancel={setShowModalCancel}
+        setShowModalCancel
+        ={setShowModalCancel}
+      />
+
+      <AppointmentModal
+        visible={showModalAppointment}
+        setShowModalAppointment={setShowModalAppointment}
       />
     </Container>
   );
