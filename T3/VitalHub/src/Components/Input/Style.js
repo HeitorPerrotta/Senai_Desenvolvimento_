@@ -1,48 +1,66 @@
 import styled from "styled-components";
-import { InputPerfil } from "../PerfilLabel/Style";
 
-export const Input = styled.TextInput.attrs({
-  placeholderTextColor: "#4983BA",
+export const Input = styled.TextInput.attrs({ placeholderTextColor: "#34898F" })`
+    border: 2px #49B3BA;
+    border-radius: 5px;
+    height: 53px;
+    width: 90%;
+    font-family: 'MontserratAlternates_600SemiBold';
+    padding-left: 15px;
+    margin-top: 15px;
+`
+
+export const InputModal = styled(Input)`
+    margin-top: 0px;
+`
+
+export const InputModalProp = styled.TextInput.attrs({ placeholderTextColor: "#34898F", fontSize: 12,
 })`
-  width: 90%;
-  height: 53px;
-  padding: 16px;
-  border: 2px solid #49b3ba;
-  border-radius: 5px;
-  margin-bottom: 25;
-`;
+     border: 2px #49B3BA;
+     font-family: 'MontserratAlternates_600SemiBold';
+     width: 88px;
+     height: 40px;
+     border-radius: 5px;
+     text-align: center;
+`
 
-export const InputCodigo = styled(Input)`
-  height: 65px;
-  width: 65px;
-  padding: 0px;
-  padding-bottom: 5px;
-  margin-top: 0px;
-  font-size: 40px;
-`;
+export const InputSquare = styled(Input).attrs({ fontSize: 40, fontFamily: 'Quicksand_600SemiBold', padding: 5 })`
+    width: 62px;
+    height: 62px;
+    font-family: 'Quicksand_600SemiBold';
+    color: #34898F;
+    padding: 0 0 5px 0;
+    text-align: center;
+`
 
-export const InputBoxShadow = styled.SafeAreaView`
-  margin-top: -52px;
-  background-color: white;
-  width: 70%;
-  height: 110px;
-  elevation: 15;
-  border-radius: 5px;
-  align-items: center;
-  justify-content: center;
-`;
+export const InputUserCepCity = styled.TextInput`
+    background-color: #F5F3F3;
+    margin-bottom: 25px;
+    height: 53px;
+`
 
-export const TextInputShadow = styled.Text`
-  font-family: MontserratAlternates_600SemiBold;
-  font-size: 16px;
-`;
+export const InputUser = styled(InputUserCepCity)`
+   width: 90%;
+   height: 53px;
+`
 
-export const BoxInput = styled.SafeAreaView`
-  width: 90%;
-  flex-direction: row;
-  justify-content: space-between;
-`;
+export const BoxUserInput =  styled.View`
+    flex-direction: column;
+`
 
-export const CepCidadeInput = styled(InputPerfil)`
-  width: 45%;
-`;
+
+//css do input que vai ser retornado na prop
+export const InputBlue = styled.TextInput.attrs({
+    placeholderTextColor: "#34898F",
+    fontSize: 14,
+    fontFamily: "MontserratAlternates_600SemiBold",
+    paddingLeft: 25,
+    // textAlignVertical: "top",
+    // paddingTop: 21,
+  
+  })`
+    border: 2px solid #49b3ba;
+    border-radius: 5px;
+  `;
+
+

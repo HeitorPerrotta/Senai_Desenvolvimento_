@@ -1,92 +1,113 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
-import { Navegacao } from "./src/Screen/Navigation/Navegacao";
-import { Login } from "./src/Screen/Login/Login";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { Login } from "./src/screens/Login/Login";
 import {
   useFonts,
   MontserratAlternates_600SemiBold,
   MontserratAlternates_500Medium,
-  Quicksand,
+} from "@expo-google-fonts/montserrat-alternates";
+import {
   Quicksand_500Medium,
   Quicksand_600SemiBold,
   Quicksand_400Regular,
-} from "@expo-google-fonts/montserrat-alternates";
-import { RecuperarSenha } from "./src/Screen/Recuperar Senha/RecuperarSenha";
-import { VerficarEmail } from "./src/Screen/Verificar Email/VerificarEmail";
-import { RedefinirSenha } from "./src/Screen/Redefinir Senha/RedefinirSenha";
-import { Cadastro } from "./src/Screen/Cadastro/Cadastro";
-import { Perfil } from "./src/Screen/Perfil/Perfil";
-import { ConsultasPaciente } from "./src/Screen/ConsultasPaciente/ConsultasPaciente";
-
-const Stack = createNativeStackNavigator();
+} from "@expo-google-fonts/quicksand";
+import { LocalConsulta } from "./src/screens/LocalConsulta/LocalConsulta";
+import { Navigation } from "./src/screens/Navigation/Navigation";
+import { ConsultasMedico } from "./src/screens/ConsultasMedico/ConsultasMedico";
+import { RecuperarSenha } from "./src/screens/RecuperarSenha/RecuperarSenha";
+import { RedefinirSenha } from "./src/screens/RedefinirSenha/RedefinirSenha";
+import { ConsultasPaciente } from "./src/screens/ConsultasPaciente/ConsultasPaciente";
+import { MedicoProntuario } from "./src/screens/MedicoProntuario/MedicoProntuario";
+import { PerfilUsuario } from "./src/screens/PerfilUsuario/PerfilUsuario";
+import { Email } from "./src/screens/VerificarEmail/Email";
+import { Cadastro } from  "./src/screens/Cadastro/Cadastro"
 
 export default function App() {
-  const [fontsLoaded, fontsError] = useFonts({
+  let [fontsLoaded, fontError] = useFonts({
     MontserratAlternates_600SemiBold,
     MontserratAlternates_500Medium,
-    Quicksand,
     Quicksand_500Medium,
     Quicksand_600SemiBold,
-    Quicksand_400Regular
+    Quicksand_400Regular,
   });
-
-  if (!fontsLoaded && !fontsError) {
+  if (!fontsLoaded && !fontError) {
     return null;
   }
 
+  const stack = createNativeStackNavigator();
   return (
+    //container = NavigationContainer, container envolve toda estrutura de navegação
+    //navigator = componente para navegação
+    //screen(s) = tela(s)
+    //name: nome da tela
+    //component: componente que será chamado
+    //options(title): titulo da tela
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
+      <stack.Navigator>
+        <stack.Screen
           name="Navegacao"
-          component={Navegacao}
+          component={Navigation} //componente Navegacao importado para ser usado aq
           options={{ title: "Navegação" }}
         />
-
-        <Stack.Screen
+        <stack.Screen
           name="Login"
-          component={Login}
+          component={Login} //componente Login importado para ser usado aq
           options={{ title: "Login" }}
         />
-
-        <Stack.Screen
+        <stack.Screen
           name="Recuperar Senha"
           component={RecuperarSenha}
-          options={{ title: "Recuperar Senha" }}
+          options={{ title: "Recuperar senha" }}
         />
 
-        <Stack.Screen
+        <stack.Screen
           name="Verificar Email"
-          component={VerficarEmail}
+          component={Email}
           options={{ title: "Verificar Email" }}
         />
 
-        <Stack.Screen
+        <stack.Screen
           name="Redefinir Senha"
           component={RedefinirSenha}
           options={{ title: "Redefinir Senha" }}
         />
 
-        <Stack.Screen
+        <stack.Screen
           name="Cadastro"
           component={Cadastro}
-          options={{ title: "Cadastro" }}
+          options={{ title: "Criar Conta" }}
         />
 
-        <Stack.Screen
-          name="Perfil"
-          component={Perfil}
-          options={{ title: "Perfil" }}
+        <stack.Screen
+          name="Medico Consultas"
+          component={ConsultasMedico}
+          options={{ title: "Medico Consultas" }}
         />
 
-        <Stack.Screen
+        <stack.Screen
+          name="Tela de Usuário"
+          component={PerfilUsuario}
+          options={{ title: "Tela de Usuário" }}
+        />
+
+        <stack.Screen
+          name="Médico Prontuário"
+          component={MedicoProntuario}
+          options={{ title: "Médico Prontuário" }}
+        />
+
+        <stack.Screen
+          name="Local da consulta"
+          component={LocalConsulta}
+          options={{ title: "Local da consulta" }}
+        />
+
+        <stack.Screen
           name="Consultas Paciente"
           component={ConsultasPaciente}
           options={{ title: "Consultas Paciente" }}
         />
-      </Stack.Navigator>
+      </stack.Navigator>
     </NavigationContainer>
   );
 }

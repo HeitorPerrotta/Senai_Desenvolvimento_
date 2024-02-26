@@ -1,45 +1,68 @@
 import styled from "styled-components";
-import { LinearGradient } from "expo-linear-gradient";
 
 export const Container = styled.SafeAreaView`
-  flex: 1;
-  align-items: center;
-`;
+    flex: 1;
+    align-items: center;
+    background-color: #fafafa;
+`
 
-export const ContainerVerificacao = styled.SafeAreaView`
-  flex-direction: row;
-  /* gap: 20px; */
-  width: 80%;
-  justify-content: space-between;
-`;
+export const ContentInput = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: brown; */
+    width: 90%;
+`
 
-export const ContainerPerfil = styled(Container)`
-  background-color: white;
-`;
+export const UserBoxInput = styled.View`
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+`
 
-export const ContainerHeader = styled(LinearGradient).attrs({
-  colors: ["#60BFC5", "#496BBA"],
-  start: { x: -0.05, y: 1.08 },
-  end: { x: 1, y: 0 },
+export const CardContainer = styled.View.attrs({
+    shadowColor: 'black',
+    shadowOffset: { width: -2, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 3,
+    elevation: 10
 })`
-  width: 100%;
+   margin-bottom: 12px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 320px;
+    /* height: 102px; */
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+`
 
-  flex-direction: row;
+export const InfoContainer = styled.View`
+    position: absolute;
+    top: 220px;
+    /* left: 15%; */
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 280px;
+    justify-content: center;
+    align-items: center;
+    elevation: 10px;
+`
 
-  padding: 20px 20px 20px 20px;
+export const ContentInfosDoc = styled.View`
+    margin-left: 10px;
+`
 
-  border-radius: 0px 0px 15px 15px;
+export const DoctorBox = styled.View`
+    flex-direction: row;
+    align-items: center;
+`
+export const ButtonsContainer = styled.View`
+    flex-direction:row;
+    margin-top: 38px;
+    margin-bottom: 8px;
+    width: 90%;
+    justify-content: space-around;
+`
 
-  box-shadow: 0px 4px 15px #00000014;
 
-  align-items: center;
-
-  justify-content: space-between;
-`;
-
-export const FilterAppointment = styled.View`
-  width: 90%;
-  margin: 30px;
-  flex-direction: row;
-  justify-content: space-between;
-`;

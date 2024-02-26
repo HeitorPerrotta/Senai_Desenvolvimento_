@@ -1,24 +1,21 @@
 import styled from "styled-components";
 
-export const ContentAccount = styled.SafeAreaView`
-    flex-direction: row;
-    margin-top: 30px;
+export const ContentAccount = styled.View`
+    margin-top: 35px;
 `
-
 export const TextAccount = styled.Text`
-    font-size: 14px;
-    font-family: "MontserratAlternates_600SemiBold";
     color: #4E4B59;
 `
-
-export const LinkBold = styled(TextAccount)`
+export const LinkAccount = styled.Text`
     color: #4D659D;
     text-decoration: underline;
 `
 
-export const ContentCodigo = styled(ContentAccount)`
-    width: 90%;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 0px;
+export const LinkEmail = styled(LinkAccount)`
+    color: #496BBA;
 `
+
+ export const LinkDown = styled(LinkAccount)`
+     color: #344F8F;
+     margin-top: 34px;
+ `

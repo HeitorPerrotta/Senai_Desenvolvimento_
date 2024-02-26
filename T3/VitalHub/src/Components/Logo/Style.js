@@ -1,18 +1,16 @@
 import styled from "styled-components";
 
+
 export const Logo = styled.Image`
-  width: 214px;
-  height: 120px;
-`;
+    width: 214;
+    height: 120;
+    margin: 20px 0;
+`
 
-export const FotoPaciente = styled.Image`
-  width: 100%;
-  height: 280px;
-`;
-
-export const FotoKanye = styled.Image`
-    width: 90%;
-    height: 181px;
-    border-radius: 10px;
-    margin-top: 30px;
+export const Icon = styled(Logo)`
+     position: absolute;
+    left: 25;
+    top: 10;
+    width: 30px;
+    height: 30px;
 `
