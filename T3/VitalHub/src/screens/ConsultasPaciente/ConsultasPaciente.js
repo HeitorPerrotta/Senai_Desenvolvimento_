@@ -25,7 +25,7 @@ export const ConsultasPaciente = () => {
 
   const pacienteUser = [
     {
-      nome: "Vini",
+      nome: "VinCius",
       imagem: { uri: "http://github.com/Vinicius-Vieira-Andrade.png" },
     },
   ];
@@ -33,51 +33,39 @@ export const ConsultasPaciente = () => {
   const medicos = [
     {
       id: 1,
-      nome: "Dr Vini",
+      nome: "Dr Chezzy",
       situacao: "pendente",
-      imagem: require("../../assets/images/Maskgroup(2).png"),
+      imagem: require("../../assets/images/Chezzy.jpeg"),
     },
     {
       id: 2,
-      nome: "Dr Chezzi",
-      situacao: "pendente",
-      imagem: require("../../assets/images/Maskgroup(2).png"),
+      nome: "Dr Enrike",
+      situacao: "realizado",
+      imagem: require("../../assets/images/Enrike.jpeg"),
     },
     {
       id: 3,
-      nome: "Dr Enrike-Chan",
-      situacao: "realizado",
-      imagem: require("../../assets/images/Maskgroup(2).png"),
+      nome: "Dra Catarena",
+      situacao: "cancelado",
+      imagem: require("../../assets/images/Catarena.jpeg"),
     },
     {
       id: 4,
-      nome: "Dra Catarina",
+      nome: "Dr Dominguinhos",
       situacao: "cancelado",
-      imagem: require("../../assets/images/Maskgroup(2).png"),
+      imagem: require("../../assets/images/Tinas.jpeg"),
     },
     {
       id: 5,
-      nome: "Dr Calvo",
-      situacao: "cancelado",
-      imagem: require("../../assets/images/Maskgroup(2).png"),
+      nome: "Dr Gordão",
+      situacao: "realizado",
+      imagem: require("../../assets/images/Lindo.jpeg"),
     },
     {
       id: 6,
-      nome: "Dr EiThor",
+      nome: "Dr GabrielAS",
       situacao: "realizado",
-      imagem: require("../../assets/images/Maskgroup(2).png"),
-    },
-    {
-      id: 6,
-      nome: "Dr Thanos",
-      situacao: "realizado",
-      imagem: require("../../assets/images/Maskgroup(2).png"),
-    },
-    {
-      id: 6,
-      nome: "Dr Ney",
-      situacao: "realizado",
-      imagem: require("../../assets/images/Maskgroup(2).png"),
+      imagem: require("../../assets/images/Gabrielo.jpeg"),
     },
   ];
 

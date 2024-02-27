@@ -3,9 +3,9 @@ import { Container, InfoContainer, UserBoxInput } from "../../components/Contain
 import { ImageBox } from "../../components/Image/Image"
 import { BoxUserInput, InputUser } from "../../components/Input/style"
 import { Label, LabelCepCity, LabelDate, TextEmail } from "../../components/Text/style"
-import { TitleUser } from "../../components/Titulo/style"
-import { Button, ButtonEdit, ButtonTitle } from "../../components/Botao/style"
+import { TitleUser } from "../../components/Title/style"
 import { InputUserSquare } from "./Index"
+import { Button, ButtonEdit, ButtonTitle } from "../../components/Button/Style"
 
 export const PerfilUsuario = () => {
     return (

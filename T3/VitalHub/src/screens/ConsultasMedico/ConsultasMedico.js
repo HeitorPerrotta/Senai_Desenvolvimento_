@@ -19,47 +19,41 @@ import { AbsTabsStyle } from "../../components/BtnListAppontement/AbsListAppoint
 
 const medico = [
   {
-    nome: "Dr Claúdio",
-    imagem: require("../../assets/images/Maskgroup(2).png"),
+    nome: "Dra Catarena",
+    imagem: require("../../assets/images/Catarena.jpeg"),
   },
 ];
 
 const consultas = [
   {
     id: 1,
-    nome: "Heitor paciente",
+    nome: "Homem Lindo",
     situacao: "pendente",
-    imagem: { uri: "https://github.com/Vinicius-Vieira-Andrade.png" },
+    imagem: { uri: "https://github.com/HeitorPerrotta.png" },
   },
   {
     id: 2,
-    nome: "Lucas Bianchezzi paciente",
+    nome: "Lucas Biansexy",
     situacao: "pendente",
-    imagem: { uri: "https://github.com/Vinicius-Vieira-Andrade.png" },
+    imagem: { uri: "https://github.com/kanyewestfan420.png" },
   },
   {
     id: 3,
-    nome: "Enrike-Chan paciente",
+    nome: "AlbatrozPyt",
     situacao: "realizado",
-    imagem: { uri: "https://github.com/Vinicius-Vieira-Andrade.png" },
+    imagem: { uri: "https://github.com/AlbatrozPyt.png" },
   },
   {
     id: 4,
     nome: "Catarina paciente",
     situacao: "pendente",
-    imagem: { uri: "https://github.com/Vinicius-Vieira-Andrade.png" },
+    imagem: { uri: "https://github.com/BarackHusseinObama.png" },
   },
   {
     id: 5,
     nome: "Gabriel paciente",
     situacao: "cancelado",
-    imagem: { uri: "https://github.com/Vinicius-Vieira-Andrade.png" },
-  },
-  {
-    id: 6,
-    nome: "Vinicius paciente",
-    situacao: "realizado",
-    imagem: { uri: "https://github.com/Vinicius-Vieira-Andrade.png" },
+    imagem: { uri: "https://github.com/VinnyDiesel.png" },
   },
 ];
 

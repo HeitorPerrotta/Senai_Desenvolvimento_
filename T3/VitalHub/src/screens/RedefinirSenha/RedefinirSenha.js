@@ -1,9 +1,9 @@
-import { Button, ButtonTitle } from "../../components/Botao/style"
+import { Button, ButtonTitle } from "../../components/Button/Style"
 import { Container } from "../../components/Container/style"
 import { Input } from "../../components/Input/style"
 import { Icon, Logo } from "../../components/Logo/style"
 import { Text } from "../../components/Text/style"
-import { Title } from "../../components/Titulo/style"
+import { Title } from "../../components/Title/style"
 
 export const RedefinirSenha = () => {
     return (

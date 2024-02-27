@@ -1,21 +1,21 @@
 import { Modal } from "react-native"
-import { Title } from "../../Titulo/style"
+import { Title } from "../../Title/style"
 import { AppointmentContent, ModalContent, ModalImage, RowTextModal, TextModal } from "./style"
-import { ButtonSecundary, ButtonSecundaryText, ButtonTitle, ModalButton } from "../../Botao/style"
+import { ButtonSecundary, ButtonSecundaryText, ButtonTitle, ModalButton } from "../../Button/Style"
 
 export const AppointmentModal = ({ navigation, visible, setShowModalAppointment, typeProfile = 'paciente', ...rest }) => {
   return (
     <Modal {...rest} visible={visible} transparent={true} animationType='fade'>
       <AppointmentContent>
         <ModalContent>
-          <ModalImage source={{ uri: "http://github.com/Vinicius-Vieira-Andrade.png" }} />
+          <ModalImage source={{ uri: "http://github.com/AlbatrozPyt.png" }} />
 
-          <Title>Vinicius Andrade</Title>
+          <Title>Matheus Enrike</Title>
 
           <RowTextModal>
-            <TextModal>20 anos</TextModal>
+            <TextModal>100 anos</TextModal>
 
-            <TextModal>Vini@gmail.com</TextModal>
+            <TextModal>Lenda@gmail.com</TextModal>
           </RowTextModal>
 
           <ModalButton>

@@ -20,7 +20,8 @@ import { ConsultasPaciente } from "./src/screens/ConsultasPaciente/ConsultasPaci
 import { MedicoProntuario } from "./src/screens/MedicoProntuario/MedicoProntuario";
 import { PerfilUsuario } from "./src/screens/PerfilUsuario/PerfilUsuario";
 import { Email } from "./src/screens/VerificarEmail/Email";
-import { Cadastro } from  "./src/screens/Cadastro/Cadastro"
+import { Cadastro } from "./src/screens/Cadastro/Cadastro";
+import { SelecionarClinica } from "./src/screens/SelecionarClinica/SelecionarClinica";
 
 export default function App() {
   let [fontsLoaded, fontError] = useFonts({
@@ -85,9 +86,9 @@ export default function App() {
         />
 
         <stack.Screen
-          name="Tela de Usuário"
+          name="Perfil Usuario"
           component={PerfilUsuario}
-          options={{ title: "Tela de Usuário" }}
+          options={{ title: "Perfil Usuario" }}
         />
 
         <stack.Screen
@@ -106,6 +107,12 @@ export default function App() {
           name="Consultas Paciente"
           component={ConsultasPaciente}
           options={{ title: "Consultas Paciente" }}
+        />
+
+        <stack.Screen
+          name="Selecionar Clinica"
+          component={SelecionarClinica}
+          options={{ title: "Selecionar Clinica" }}
         />
       </stack.Navigator>
     </NavigationContainer>

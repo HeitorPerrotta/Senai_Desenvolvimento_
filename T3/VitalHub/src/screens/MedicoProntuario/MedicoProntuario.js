@@ -1,12 +1,12 @@
 import { ScrollView } from "react-native";
 import { Container } from "../../components/Container/style";
 import { ImageBox } from "../../components/Image/Image";
-import { TitleUser } from "../../components/Titulo/style";
+import { TitleUser } from "../../components/Title/style";
 import { Label, TextEmail } from "../../components/Text/style";
-import { Button, ButtonTitle } from "../../components/Botao/style";
 
 import { FieldInput } from "./Index";
 import { LinkCancelBlue } from "../../components/Link/style";
+import { Button, ButtonTitle } from "../../components/Button/Style";
 
 export const MedicoProntuario = () => {
   return(

@@ -11,3 +11,9 @@ export const TitleUser = styled(Title)`
   font-size: 16px;
   margin-top: 20px;
 `;
+
+export const TitleBold = styled(Title)`
+    font-size: 16px;
+    color: #4E4B59;
+    margin-bottom: 10px;
+`

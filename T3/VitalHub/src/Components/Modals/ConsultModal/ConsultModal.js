@@ -1,15 +1,10 @@
 import { Modal } from "react-native";
-import { Title } from "../../Titulo/style";
+import { Title } from "../../Title/style";
 import { LabelModal } from "../../Text/style";
 import { BoxModalInput, ContentModal, PatientModal } from "./style";
 import { InputProp } from "../../Input/Input";
-import {
-  Button,
-  ButtonSecundary,
-  ButtonSecundaryText,
-  ButtonTitle,
-} from "../../Botao/style";
 import { Input, InputModal } from "../../Input/style";
+import { Button, ButtonSecundary, ButtonSecundaryText, ButtonTitle } from "../../Button/Style";
 
 export const ConsultModal = ({ visible, setShowModalConsult, ...rest }) => {
   return (

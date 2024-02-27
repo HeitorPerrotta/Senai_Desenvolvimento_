@@ -1,10 +1,10 @@
-import { Button, ButtonGoogle, ButtonTitle, GoogleTitle } from '../../components/Botao/style'
+import { Button, ButtonGoogle, ButtonTitle, GoogleTitle } from '../../components/Button/Style'
 import { Container } from '../../components/Container/style'
 import { ContentAccount, LinkAccount, TextAccount } from '../../components/ContentAccount/style'
 import { Input } from '../../components/Input/style'
 import { Link } from '../../components/Link/style'
 import { Logo } from '../../components/Logo/style'
-import { Title } from '../../components/Titulo/style'
+import { Title } from '../../components/Title/style'
 import { AntDesign } from '@expo/vector-icons';
 
 
