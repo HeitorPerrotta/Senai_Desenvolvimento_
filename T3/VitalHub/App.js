@@ -22,6 +22,7 @@ import { PerfilUsuario } from "./src/screens/PerfilUsuario/PerfilUsuario";
 import { Email } from "./src/screens/VerificarEmail/Email";
 import { Cadastro } from "./src/screens/Cadastro/Cadastro";
 import { SelecionarClinica } from "./src/screens/SelecionarClinica/SelecionarClinica";
+import { SelecionarMedico } from "./src/screens/SelecionarMedico/SelecionarMedico";
 
 export default function App() {
   let [fontsLoaded, fontError] = useFonts({
@@ -113,6 +114,12 @@ export default function App() {
           name="Selecionar Clinica"
           component={SelecionarClinica}
           options={{ title: "Selecionar Clinica" }}
+        />
+
+        <stack.Screen
+          name="Selecionar Medico"
+          component={SelecionarMedico}
+          options={{ title: "Selecionar Medico" }}
         />
       </stack.Navigator>
     </NavigationContainer>

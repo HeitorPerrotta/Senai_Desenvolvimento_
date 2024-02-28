@@ -86,9 +86,46 @@ export const ClinicContent = styled.View`
 `;
 
 export const ClinicaContainer = styled.SafeAreaView`
-    flex: 1;
-    align-items: center;
-    margin-top: 30px;
-    justify-content: center;
-    width: 100%;
-`
+  flex: 1;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: center;
+  width: 100%;
+`;
+
+export const DataUser = styled.View`
+  gap: 10px;
+`;
+
+export const ContainerMedico = styled.View`
+  /* width: 100%; */
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+`;
+
+export const SelecionarMedicoContainer = styled.View`
+  width: 320px;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid white;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+`;
+
+export const NomeEspecialidade = styled.View`
+  gap: 10px;
+  width: 80%;
+  flex-direction: column;
+`;
+
+// export const Container100 = styled.FlatList`
+// width: 100%;
+// `
+
+// export const Container100Medico = styled(Container100)`
+// width: 100%;
+// height: 550px;
+// `
