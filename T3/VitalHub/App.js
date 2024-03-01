@@ -23,6 +23,7 @@ import { Email } from "./src/screens/VerificarEmail/Email";
 import { Cadastro } from "./src/screens/Cadastro/Cadastro";
 import { SelecionarClinica } from "./src/screens/SelecionarClinica/SelecionarClinica";
 import { SelecionarMedico } from "./src/screens/SelecionarMedico/SelecionarMedico";
+import { SelecionarData } from "./src/screens/SelecionarData/SelecionarData";
 
 export default function App() {
   let [fontsLoaded, fontError] = useFonts({
@@ -120,6 +121,17 @@ export default function App() {
           name="Selecionar Medico"
           component={SelecionarMedico}
           options={{ title: "Selecionar Medico" }}
+        />
+
+        <stack.Screen
+          name="Selecionar Data"
+          component={SelecionarData}
+          options={{ title: "Selecionar Data" }}
+        />
+        <stack.Screen
+          name="Local Consulta"
+          component={LocalConsulta}
+          options={{ title: "Local Consulta" }}
         />
       </stack.Navigator>
     </NavigationContainer>

@@ -56,3 +56,19 @@ export const Especialidade = styled.Text`
   font-size: 14px;
   font-family: Quicksand_600SemiBold;
 `;
+
+export const LabelHorario = styled.Text`
+  right: 45px;
+  top: 35px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Quicksand_600SemiBold;
+`;
+
+export const Subtitle = styled.Text`
+font-size: 16px;
+font-family: Quicksand_500Medium;
+text-align: center;
+margin-bottom: 30px;
+
+`

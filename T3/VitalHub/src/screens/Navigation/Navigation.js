@@ -9,55 +9,53 @@ export const Navigation = ({ navigation }) => {
         //ao clique do botão será chamado a função
         onPress={() => navigation.navigate("Login")}
       />
-
       <Button
         title={"Recuperar Senha"}
         onPress={() => navigation.navigate("Recuperar Senha")}
       />
-
       <Button
         title={"Verificar Email"}
         onPress={() => navigation.navigate("Verificar Email")}
       />
-
       <Button
         title={"Redefinir Senha"}
         onPress={() => navigation.navigate("Redefinir Senha")}
       />
-
       <Button
         title={"Cadastro"}
         onPress={() => navigation.navigate("Cadastro")}
       />
-
       <Button
         title={"Medico Consultas"}
         onPress={() => navigation.navigate("Medico Consultas")}
       />
-
       <Button
         title={"Perfil Usuario"}
         onPress={() => navigation.navigate("Perfil Usuario")}
       />
-
       <Button
         title={"Médico Prontuário"}
         onPress={() => navigation.navigate("Médico Prontuário")}
       />
-
       <Button
         title={"Consultas Paciente"}
         onPress={() => navigation.navigate("Consultas Paciente")}
       />
-
       <Button
         title={"Selecionar Clinica"}
         onPress={() => navigation.navigate("Selecionar Clinica")}
       />
-
       <Button
         title={"Selecionar Medico"}
         onPress={() => navigation.navigate("Selecionar Medico")}
+      />
+      <Button
+        title={"Selecionar Data"}
+        onPress={() => navigation.navigate("Selecionar Data")}
+      />
+      <Button
+        title={"Local Consulta"}
+        onPress={() => navigation.navigate("Local Consulta")}
       />
     </View>
   );

@@ -121,6 +121,21 @@ export const NomeEspecialidade = styled.View`
   flex-direction: column;
 `;
 
+export const ContainerData = styled.View`
+  width: 100%;
+  align-items: center;
+`;
+
+export const DownArrow = styled.View`
+  left: 160px;
+  bottom: 44px;
+`;
+
+export const ContainerTitleSubtitle = styled.View`
+  /* border: 1px solid black; */
+  align-self: flex-start;
+`;
+
 // export const Container100 = styled.FlatList`
 // width: 100%;
 // `

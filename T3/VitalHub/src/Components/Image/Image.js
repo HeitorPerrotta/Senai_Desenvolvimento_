@@ -10,3 +10,8 @@ width: 77px;
 height: 80px;
 
 `
+
+export const MapImage = styled.Image`
+    width: 100%;
+    height: 324px;
+`

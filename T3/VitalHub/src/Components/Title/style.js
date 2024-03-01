@@ -17,3 +17,8 @@ export const TitleBold = styled(Title)`
     color: #4E4B59;
     margin-bottom: 10px;
 `
+
+export const SubtitleCard = styled.Text`
+  font-family: 'Quicksand_500Medium';
+  color: #8C8A97;
+`
