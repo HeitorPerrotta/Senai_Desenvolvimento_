@@ -8,7 +8,7 @@ import { Input } from '../../components/Input/Input'
 import { Close, Logo } from '../../components/Images/StyleImages'
 import { Title } from '../../components/Title/StyleTitle'
 
-export const RedefinePassword = () => {
+export const RedefinirSenha = () => {
 
     return (
 

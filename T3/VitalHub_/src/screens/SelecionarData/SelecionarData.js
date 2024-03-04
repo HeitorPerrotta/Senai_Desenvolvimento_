@@ -10,7 +10,7 @@ import { ConfirmAppointmentModal } from "../../components/ConfirmAppointmentModa
 import { useState } from "react"
 
 
-export const SelectDate = ({navigation}) => {
+export const SelecionarData = ({navigation}) => {
 
     const [showModal, setShowModal] = useState(false);
 

@@ -7,7 +7,7 @@ import { Close, Logo } from "../../components/Images/StyleImages"
 import { Title } from "../../components/Title/StyleTitle"
 
 
-export const CheckEmail = ({ navigation }) => {
+export const VerificarEmail = ({ navigation }) => {
     return (
 
         <Container>

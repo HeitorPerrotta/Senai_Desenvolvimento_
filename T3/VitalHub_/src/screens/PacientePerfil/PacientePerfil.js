@@ -11,7 +11,7 @@ import { ButtonText } from "../../components/ButtonText/StyleButtonText"
 import api from "../../services/Services"
 import { BlockedSmallButton, ButtonLarge } from "../../components/Button/Button"
 
-export const PatientProfile = ({navigation}) => {
+export const PacientePerfil = ({navigation}) => {
 
     const [cep, setCep] = useState('');
     const [logradouro, setLogradouro] = useState('');
@@ -53,11 +53,11 @@ export const PatientProfile = ({navigation}) => {
 
             <Container>
 
-                <ImagemPerfilPaciente source={require('../../assets/ney.webp')} />
+                <ImagemPerfilPaciente source={require('../../assets/Enrike.jpeg')} />
 
-                <TitleProfile>Neymar Jr</TitleProfile>
+                <TitleProfile>Matheus o Enrike</TitleProfile>
 
-                <DescriptionPassword description={"neymar.jr@gmail.com"} />
+                <DescriptionPassword description={"enrikão@gmail.com"} />
 
                 <InputBox
                     placeholderTextColor={"#A1A1A1"}

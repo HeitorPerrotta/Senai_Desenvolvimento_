@@ -7,7 +7,7 @@ import { Logo, Seta } from "../../components/Images/StyleImages"
 import { Title } from "../../components/Title/StyleTitle"
 
 
-export const ForgotPassword = ({ navigation }) => {
+export const EsqueceuSenha = ({ navigation }) => {
 
     return (
 

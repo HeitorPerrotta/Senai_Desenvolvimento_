@@ -10,7 +10,7 @@ import { Title } from '../../components/Title/StyleTitle'
 import { LogoCreateAccount } from '../../components/Images/StyleImages'
 
 
-export const CreateAccount = ({ navigation }) => {
+export const Cadastro = ({ navigation }) => {
 
     return (
 

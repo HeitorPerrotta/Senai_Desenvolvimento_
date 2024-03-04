@@ -14,7 +14,7 @@ import { CardCancelLess } from "../../components/Descriptions/Descriptions"
 import { AppointmentModal } from "../../components/AppointmentModal/AppointmentModal"
 
 
-export const DoctorConsultation = () => {
+export const ConsultasDoutor = () => {
 
     const [selected, setSelected] = useState({
         agendadas: true,
@@ -53,7 +53,7 @@ export const DoctorConsultation = () => {
             id: 3,
             hour: '17:00',
             image: image,
-            name: 'Neymar Jr',
+            name: 'Chezzy',
             age: '28 anos',
             routine: 'Rotina',
             status: "c"
@@ -154,7 +154,7 @@ export const DoctorConsultation = () => {
 
                 <Card url={require('../../assets/ImageCardMale.png')} name={"Richard Kosta"} age={"28 anos"} routine={"Urgência"} hour={"15:00"}/>
 
-                <Card url={require('../../assets/ney.webp')} name={"Neymar Jr"} age={"33 anos"} routine={"Rotina"} hour={"17:00"}/> */}
+                <Card url={require('../../assets/chezzy.jpeg')} name={"Chezzy Jr"} age={"33 anos"} routine={"Rotina"} hour={"17:00"}/> */}
 
         </Container>
 

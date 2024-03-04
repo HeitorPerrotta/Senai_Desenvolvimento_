@@ -3,24 +3,24 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'react-native';
 import { Navegacao } from './src/screens/Navegacao/Navegacao';
 import { Login } from './src/screens/Login/Login';
-import { ForgotPassword } from './src/screens/ForgotPassword/ForgotPassword';
 
 import { useFonts, MontserratAlternates_500Medium, MontserratAlternates_600SemiBold, MontserratAlternates_700Bold } from '@expo-google-fonts/montserrat-alternates';
 import { Quicksand_500Medium, Quicksand_600SemiBold } from '@expo-google-fonts/quicksand';
 
 
-import { CheckEmail } from './src/screens/CheckEmail/ChekEmail';
-import { RedefinePassword } from './src/screens/RedefinePassword/RedefinePassword';
-import { CreateAccount } from './src/screens/CreateAccount/CreateAccount';
-import { PatientProfile } from './src/screens/PatientProfile/PatientProfile';
-import { MedicalRecords } from './src/screens/MedicalRecords/MedicalRecords';
-import { DoctorConsultation } from './src/screens/DoctorConsultation/DoctorConsultation';
-import { SelectDoctor } from './src/screens/SelectDoctor/SelectDoctor';
-import { SelectCLinic } from './src/screens/SelectClinic/SelectClinic';
-import { PatientConsultation } from './src/screens/PatientConsultation/PatientConsultation';
-import { ConsultLocalization } from './src/screens/ConsultLocalization/ConsultLocalization';
-import { ViewPrescription } from './src/screens/ViewPrescription/ViewPrescription';
-import { SelectDate } from './src/screens/SelectDate/SelectDate';
+import { Cadastro } from './src/screens/Cadastro/Cadastro';
+import { ConsultasPaciente } from './src/screens/ConsultasPacientes/ConsultasPaciente';
+import { EsqueceuSenha } from './src/screens/EsqueceuSenha/EsqueceuSenha';
+import { LocalConsulta } from './src/screens/LocalConsulta/LocalConsulta';
+import { MedicoProntuario } from './src/screens/MedicoProntuario/MedicoProntuario';
+import { PacientePerfil } from './src/screens/PacientePerfil/PacientePerfil';
+import { RedefinirSenha } from './src/screens/RedefinirSenha/RedefinirSenha';
+import { SelecionarClinica } from './src/screens/SelecionarClinica/SelecionarClinica';
+import { SelecionarData } from './src/screens/SelecionarData/SelecionarData';
+import { SelecionarMedico } from './src/screens/SelecionarMedico/SelecionarMedico';
+import { VerProntuario } from './src/screens/VerProntuario/VerProntuario';
+import { VerificarEmail } from './src/screens/VerificarEmail/VerificarEmail';
+import { ConsultasDoutor } from './src/screens/ConsultasDoutor/ConsultasDoutor';
 
 
 const Stack = createNativeStackNavigator();
@@ -70,78 +70,78 @@ export default function App() {
         />
 
         <Stack.Screen
-          name="ForgotPassword"
-          component={ForgotPassword}
-          options={{ title: 'ForgotPassword' }}
+          name="Esqueceu Senha"
+          component={EsqueceuSenha}
+          options={{ title: 'Esqueceu Senha' }}
         />
 
         <Stack.Screen
-          name="CheckEmail"
-          component={CheckEmail}
-          options={{ title: 'CheckEmail' }}
+          name="Verificar Email"
+          component={VerificarEmail}
+          options={{ title: 'Verificar Email' }}
         />
 
         <Stack.Screen
-          name="RedefinePassword"
-          component={RedefinePassword}
-          options={{ title: 'RedefinePassword' }}
+          name="Redefinir Senha"
+          component={RedefinirSenha}
+          options={{ title: 'Redefinir Senha' }}
         />
 
         <Stack.Screen
-          name="CreateAccount"
-          component={CreateAccount}
-          options={{ title: 'CreateAccount' }}
+          name="Cadastro"
+          component={Cadastro}
+          options={{ title: 'Cadastro' }}
         />
 
         <Stack.Screen
-          name="PatientProfile"
-          component={PatientProfile}
-          options={{ title: 'PatientProfile' }}
+          name="Paciente Perfil"
+          component={PacientePerfil}
+          options={{ title: 'Paciente Perfil' }}
         />
 
         <Stack.Screen
-          name="MedicalRecords"
-          component={MedicalRecords}
-          options={{ title: 'MedicalRecords' }}
+          name="Medico Prontuario"
+          component={MedicoProntuario}
+          options={{ title: 'Medico Prontuario' }}
         />
 
         <Stack.Screen
-          name="DoctorConsultation"
-          component={DoctorConsultation}
-          options={{ title: 'DoctorConsultation' }}
+          name="Consultas Medico"
+          component={ConsultasDoutor}
+          options={{ title: 'Consultas Medico' }}
         />
 
         <Stack.Screen
-          name="PatientConsultation"
-          component={PatientConsultation}
-          options={{ title: 'PatientConsultation' }}
+          name="Consultas Paciente"
+          component={ConsultasPaciente}
+          options={{ title: 'Consultas Paciente' }}
         />
 
         <Stack.Screen
-          name="SelectDoctor"
-          component={SelectDoctor}
-          options={{ title: 'SelectDoctor' }}
+          name="Selecionar Medico"
+          component={SelecionarMedico}
+          options={{ title: 'Selecionar Medico' }}
         />
 
         <Stack.Screen
-          name="SelectClinic"
-          component={SelectCLinic}
-          options={{ title: 'SelectClinic' }}
+          name="Selecionar Clinica"
+          component={SelecionarClinica}
+          options={{ title: 'Selecionar Clinica' }}
         />
         <Stack.Screen
-          name="SelectDate"
-          component={SelectDate}
-          options={{ title: 'SelectDate' }}
+          name="Selecionar Data"
+          component={SelecionarData}
+          options={{ title: 'Selecionar Data' }}
         />
         <Stack.Screen
-          name="ConsultLocalization"
-          component={ConsultLocalization}
-          options={{ title: 'ConsultLocalization' }}
+          name="Local Consulta"
+          component={LocalConsulta}
+          options={{ title: 'Local Consulta' }}
         />
         <Stack.Screen
-          name="ViewPrescription"
-          component={ViewPrescription}
-          options={{ title: 'ViewPrescription' }}
+          name="Ver Prontuario"
+          component={VerProntuario}
+          options={{ title: 'Ver Prontuario' }}
         />
 
       </Stack.Navigator>

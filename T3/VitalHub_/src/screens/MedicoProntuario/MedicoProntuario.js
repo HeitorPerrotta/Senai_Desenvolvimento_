@@ -1,29 +1,29 @@
 import { BlockedButton, ButtonNormal } from "../../components/Button/Button"
 import { BoxAgeEmail, Container, ScrollContainer } from "../../components/Container/StyleContainer"
 import { DescriptionPassword } from "../../components/Descriptions/Descriptions"
-import {  CancelButtonRecords } from "../../components/Descriptions/StyledDescriptions"
+import { CancelButtonRecords } from "../../components/Descriptions/StyledDescriptions"
 import { HighInputBox, LargeInputTextBox } from "../../components/InputBox/InputBox"
 import { ImagemPerfilPaciente } from "../../components/Images/StyleImages"
 import { TitleProfile } from "../../components/Title/StyleTitle"
 
 
 
-export const MedicalRecords = () => {
+export const MedicoProntuario = () => {
     return (
 
         <ScrollContainer>
 
-            <ImagemPerfilPaciente source={require('../../assets/ney.webp')} />
+            <ImagemPerfilPaciente source={require('../../assets/Enrike.jpeg')} />
 
             <Container>
 
 
-                <TitleProfile>Neymar Jr</TitleProfile>
+                <TitleProfile>Matheus o Enrike</TitleProfile>
 
                 <BoxAgeEmail>
 
                     <DescriptionPassword description={"22 anos"} />
-                    <DescriptionPassword description={"neymar.jr@gmail.com"} />
+                    <DescriptionPassword description={"enrike@gmail.com"} />
 
                 </BoxAgeEmail>
 

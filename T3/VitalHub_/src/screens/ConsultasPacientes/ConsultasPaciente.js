@@ -25,7 +25,7 @@ import { AppointmentModal } from "../../components/AppointmentModal/AppointmentM
 import { ScheduleModal } from "../../components/ScheduleModal/ScheduleModal";
 import { PatientAppointmentModal } from "../../components/PatientAppointmentModal/PatientAppointmentModal";
 
-export const PatientConsultation = ({ navigation }) => {
+export const ConsultasPaciente = ({ navigation }) => {
   
   const [selected, setSelected] = useState({
     agendadas: true,
@@ -38,7 +38,7 @@ export const PatientConsultation = ({ navigation }) => {
   const [showModal, setShowModal] = useState(false);
   const [showModalPatient, setShowModalPatient] = useState(false);
 
-  const image = require("../../assets/ney.webp");
+  const image = require("../../assets/Chezzy.jpeg");
 
   // CARD MOCADOS
 
@@ -47,7 +47,7 @@ export const PatientConsultation = ({ navigation }) => {
       id: 1,
       hour: "14:00",
       image: image,
-      name: "Dr.Campos",
+      name: "Dr.???",
       age: "22 anos",
       routine: "Rotina",
       status: "r",
@@ -56,7 +56,7 @@ export const PatientConsultation = ({ navigation }) => {
       id: 2,
       hour: "15:00",
       image: image,
-      name: "Dr.Ney",
+      name: "Dr.Chezzy",
       age: "28 anos",
       routine: "Urgência",
       status: "a",
@@ -65,7 +65,7 @@ export const PatientConsultation = ({ navigation }) => {
       id: 3,
       hour: "17:00",
       image: image,
-      name: "Dr.Paladino",
+      name: "Dr.Vini",
       age: "28 anos",
       routine: "Rotina",
       status: "c",
@@ -204,7 +204,7 @@ export const PatientConsultation = ({ navigation }) => {
 
                 <Card url={require('../../assets/ImageCardMale.png')} name={"Richard Kosta"} age={"28 anos"} routine={"Urgência"} hour={"15:00"}/>
 
-                <Card url={require('../../assets/ney.webp')} name={"Neymar Jr"} age={"33 anos"} routine={"Rotina"} hour={"17:00"}/> */}
+                <Card url={require('../../assets/chezzy.jpeg')} name={"Chezzy Jr"} age={"33 anos"} routine={"Rotina"} hour={"17:00"}/> */}
     </Container>
   );
 };

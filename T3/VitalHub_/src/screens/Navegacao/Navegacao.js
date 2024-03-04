@@ -5,59 +5,59 @@ export const Navegacao = ({ navigation }) => {
     <View>
       <Button title="Login" onPress={() => navigation.navigate("Login")} />
       <Button
-        title="ForgotPassword"
-        onPress={() => navigation.navigate("ForgotPassword")}
+        title="Esqueceu Senha"
+        onPress={() => navigation.navigate("Esqueceu Senha")}
       />
       <Button
-        title="CheckEmail"
-        onPress={() => navigation.navigate("CheckEmail")}
+        title="Verificar Email"
+        onPress={() => navigation.navigate("Verificar Email")}
       />
       <Button
-        title="RedefinePassword"
-        onPress={() => navigation.navigate("RedefinePassword")}
+        title="Redefinir Senha"
+        onPress={() => navigation.navigate("Redefinir Senha")}
       />
       <Button
-        title="CreateAccount"
-        onPress={() => navigation.navigate("CreateAccount")}
+        title="Cadastro"
+        onPress={() => navigation.navigate("Cadastro")}
       />
       <Button
-        title="PatientProfile"
-        onPress={() => navigation.navigate("PatientProfile")}
+        title="Paciente Perfil"
+        onPress={() => navigation.navigate("Paciente Perfil")}
       />
       <Button
-        title="MedicalRecords"
-        onPress={() => navigation.navigate("MedicalRecords")}
+        title="Medico Prontuario"
+        onPress={() => navigation.navigate("Medico Prontuario")}
       />
       <Button
-        title="DoctorConsultation"
-        onPress={() => navigation.navigate("DoctorConsultation")}
+        title="Consultas Medico"
+        onPress={() => navigation.navigate("Consultas Medico")}
       />
       <Button
-        title="PatientConsultation"
-        onPress={() => navigation.navigate("PatientConsultation")}
-      />
-
-      <Button
-        title="SelectDoctor"
-        onPress={() => navigation.navigate("SelectDoctor")}
+        title="Consultas Paciente"
+        onPress={() => navigation.navigate("Consultas Paciente")}
       />
 
       <Button
-        title="SelectClinic"
-        onPress={() => navigation.navigate("SelectClinic")}
-      />
-      <Button
-        title="SelectDate"
-        onPress={() => navigation.navigate("SelectDate")}
-      />
-      <Button
-        title="ConsultLocalization"
-        onPress={() => navigation.navigate("ConsultLocalization")}
+        title="Selecionar Medico"
+        onPress={() => navigation.navigate("Selecionar Medico")}
       />
 
       <Button
-        title="ViewPrescription"
-        onPress={() => navigation.navigate("ViewPrescription")}
+        title="Selecionar Clinica"
+        onPress={() => navigation.navigate("Selecionar Clinica")}
+      />
+      <Button
+        title="Selecionar Data"
+        onPress={() => navigation.navigate("Selecionar Data")}
+      />
+      <Button
+        title="Local Consulta"
+        onPress={() => navigation.navigate("Local Consulta")}
+      />
+
+      <Button
+        title="Ver Prontuario"
+        onPress={() => navigation.navigate("Ver Prontuario")}
       />
     </View>
   );

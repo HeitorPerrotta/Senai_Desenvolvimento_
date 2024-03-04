@@ -16,7 +16,7 @@ import {
 
 import { FontAwesome } from "@expo/vector-icons";
 
-export const ConsultLocalization = ({navigation}) => {
+export const LocalConsulta = ({navigation}) => {
   return (
     <Container>
       <StatusBar translucent backgroundColor="transparent" />

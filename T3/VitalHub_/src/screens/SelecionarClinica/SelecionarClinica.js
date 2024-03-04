@@ -13,7 +13,7 @@ import { CancelLessMargin } from "../../components/Descriptions/StyledDescriptio
 import { TitleSelect } from "../../components/Title/StyleTitle";
 import { NameTitle } from "../../components/Title/Title";
 
-export const SelectCLinic = ({navigation}) => {
+export const SelecionarClinica = ({navigation}) => {
   const dataItens = [
     {
       id: "1",

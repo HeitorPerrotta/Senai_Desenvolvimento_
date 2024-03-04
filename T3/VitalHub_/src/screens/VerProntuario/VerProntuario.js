@@ -35,13 +35,13 @@ import {
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 
-export const ViewPrescription = ({navigation}) => {
+export const VerProntuario = ({navigation}) => {
   return (
     <ScrollContainer>
       <Container>
-        <ViewImage source={require("../../assets/ney.webp")} />
+        <ViewImage source={require("../../assets/Chezzy.jpeg")} />
 
-        <TitlePrescription> Dr Neymar Jr</TitlePrescription>
+        <TitlePrescription> Dr Chezzy</TitlePrescription>
 
         <BoxAgeEmail>
           <DescriptionPassword description={"Cliníco geral"} />

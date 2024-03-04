@@ -16,7 +16,7 @@ import { PatientAppointmentModal } from "../../components/PatientAppointmentModa
 
 // const [showModal, setShowModal] = useState(false);
 
-export const SelectDoctor = ({navigation}) => {
+export const SelecionarMedico = ({navigation}) => {
   const image = require("../../assets/ImageCard.png");
 
   const dataItens = [
@@ -75,10 +75,10 @@ export const SelectDoctor = ({navigation}) => {
 
         {/* <ScheduleModal visible={showModal} setShowModal={setShowModal} /> */}
 
-        <PatientAppointmentModal
+        {/* <PatientAppointmentModal
           visible={showModalAppointment}
           setShowModalAppointment={setShowModalAppointment}
-        />
+        /> */}
 
         {/* <CancellationModal
           visible={showModalCancel}

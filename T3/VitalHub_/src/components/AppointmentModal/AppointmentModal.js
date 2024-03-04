@@ -19,11 +19,11 @@ export const AppointmentModal = ({
     <Modal {...rest} visible={visible} transparent={true} animationType="fade">
       <PatientModal>
         <ModalContent>
-          <PatientImage source={require("../../assets/ney.webp")} />
-          <TitleModal>Niccole Sarga</TitleModal>
+          <PatientImage source={require("../../assets/Enrike.jpeg")} />
+          <TitleModal>Enrikão</TitleModal>
           <ModalBox>
-            <AgeText>22 anos</AgeText>
-            <EmailTextApp>niccole.sarga@gmail.com</EmailTextApp>
+            <AgeText>12 anos</AgeText>
+            <EmailTextApp>enriqzz7@gmail.com</EmailTextApp>
           </ModalBox>
 
           <ButtonLargeSelect text={"Inserir Prontuario"} />
