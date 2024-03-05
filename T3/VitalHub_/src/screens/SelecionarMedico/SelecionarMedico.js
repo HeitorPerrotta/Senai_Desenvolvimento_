@@ -69,7 +69,7 @@ export const SelecionarMedico = ({navigation}) => {
 
                 <CardSelectDoctor doctorArea={'Clínico, Pediatra'} url={require('../../assets/DermaImage.png')} name={'Dr Rodrigo Santos'}/> */}
 
-        <ButtonLargeSelect  onPress={() => { navigation.navigate("SelectDate") }} text={"Continuar"} />
+        <ButtonLargeSelect  onPress={() => { navigation.navigate("Selecionar Data") }} text={"Continuar"} />
 
         <CancelLessMargin>Cancelar</CancelLessMargin>
 

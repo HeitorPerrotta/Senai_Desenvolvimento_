@@ -30,7 +30,7 @@ export const PatientAppointmentModal = ({
             <DescriptionModalRecord>CRM-15286</DescriptionModalRecord>
           </BoxAgeEmailModal>
 
-          <ButtonLargeConfirmModal onPress={() => navigation.navigate("ConsultLocalization")}  text={"Ver Local da Consulta"} />
+          <ButtonLargeConfirmModal onPress={() => navigation.navigate("LocalConsulta")}  text={"Ver Local da Consulta"} />
 
           <CardCancelLessModal
             onPressCancel={() => setShowModalAppointment(false)}

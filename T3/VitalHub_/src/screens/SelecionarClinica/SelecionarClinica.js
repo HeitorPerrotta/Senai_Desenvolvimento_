@@ -77,7 +77,7 @@ export const SelecionarClinica = ({navigation}) => {
         keyExtractor={(item) => item.id}
       />
 
-      <ButtonLargeSelectClinic onPress={() => { navigation.navigate("SelectDate") }} text={"Continuar"} />
+      <ButtonLargeSelectClinic onPress={() => { navigation.navigate("Selecionar Data") }} text={"Continuar"} />
 
       <CancelLessMargin>Cancelar</CancelLessMargin>
     </Container>

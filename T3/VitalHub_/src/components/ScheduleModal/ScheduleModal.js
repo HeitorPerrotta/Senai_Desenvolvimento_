@@ -31,7 +31,7 @@ export const  ScheduleModal = ({navigation, visible, setShowModal, ...rest }) =>
             editable={true}
           />
 
-          <ButtonLargeAgendament onPress={() => navigation.navigate("SelectClinic")} text={"continuar"}  />
+          <ButtonLargeAgendament onPress={() => navigation.navigate("SelecionarClinica")} text={"continuar"}  />
 
           <CardCancelLessModal
             onPressCancel={() => setShowModal(false)}

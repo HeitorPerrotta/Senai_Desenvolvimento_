@@ -53,7 +53,7 @@ export const LocalConsulta = ({navigation}) => {
 
      
       
-        <ButtonLargeLocalization onPress={() => navigation.navigate("PatientConsultation")}  text={"Voltar a Home"} />
+        <ButtonLargeLocalization onPress={() => navigation.navigate("Consultas Paciente")}  text={"Voltar a Home"} />
      
     </Container>
   );

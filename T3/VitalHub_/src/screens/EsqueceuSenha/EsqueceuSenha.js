@@ -28,7 +28,7 @@ export const EsqueceuSenha = ({ navigation }) => {
                 placeholderTextColor={'#49B3BA'}
             />
 
-            <ButtonNormal text={"Continuar"} onPress={() => navigation.navigate("CheckEmail")} />
+            <ButtonNormal text={"Continuar"} onPress={() => navigation.navigate("Verificar Email")} />
 
 
         </Container>

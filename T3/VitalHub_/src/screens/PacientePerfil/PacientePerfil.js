@@ -104,7 +104,7 @@ export const PacientePerfil = ({navigation}) => {
                     />
                 </ContainerCepCidade>
 
-                <ButtonLarge onPress={() => { navigation.navigate("PatientConsultation") }} text={"Salvar"} />
+                <ButtonLarge onPress={() => { navigation.navigate("Consultas Paciente") }} text={"Salvar"} />
 
                 <ButtonLarge text={"Editar"}/>
 

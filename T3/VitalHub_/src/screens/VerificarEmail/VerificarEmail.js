@@ -29,7 +29,7 @@ export const VerificarEmail = ({ navigation }) => {
                 <NumericInput placeholder={"0"} placeholderTextColor={"#34898F"} />
             </BoxNumeric>
 
-            <ButtonNormal text={"Confirmar"} onPress={() => { navigation.navigate("RedefinePassword") }} />
+            <ButtonNormal text={"Confirmar"} onPress={() => { navigation.navigate("Redefinir Senha") }} />
 
             <CodeResend text={"Reenviar Código"} />
 
