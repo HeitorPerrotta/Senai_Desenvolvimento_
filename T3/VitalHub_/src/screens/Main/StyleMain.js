@@ -16,5 +16,4 @@ export const ContentIcon = styled.View.attrs({
 export const TextIcon = styled.Text`
   font-size: 14px;
   font-family: "Quicksand_500Medium";
-  color: black;
 `;

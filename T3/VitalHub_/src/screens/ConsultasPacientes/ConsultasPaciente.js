@@ -70,6 +70,15 @@ export const ConsultasPaciente = ({ navigation }) => {
       routine: "Rotina",
       status: "c",
     },
+    {
+      id: 4,
+      hour: "14:00",
+      image: image,
+      name: "Dr. Glutão",
+      age: "22 anos",
+      routine: "Rotina",
+      status: "r",
+    },
   ];
 
   //FILTRO PARA CARD

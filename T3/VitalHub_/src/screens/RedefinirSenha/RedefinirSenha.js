@@ -1,44 +1,41 @@
-import { StatusBar } from 'react-native'
-import { ButtonNormal } from '../../components/Button/Button'
-import { NormalButton } from '../../components/Button/StyleButton'
-import { ButtonText } from '../../components/ButtonText/StyleButtonText'
-import { Container } from '../../components/Container/StyleContainer'
-import { DescriptionPassword } from '../../components/Descriptions/Descriptions'
-import { Input } from '../../components/Input/Input'
-import { Close, Logo } from '../../components/Images/StyleImages'
-import { Title } from '../../components/Title/StyleTitle'
+import { ButtonNormal } from "../../components/Button/Button";
+import { Container } from "../../components/Container/StyleContainer";
+import { DescriptionPassword } from "../../components/Descriptions/Descriptions";
+import { Input } from "../../components/Input/Input";
+import { Close, Logo } from "../../components/Images/StyleImages";
+import { Title } from "../../components/Title/StyleTitle";
+import { StatusBar } from "expo-status-bar";
 
 export const RedefinirSenha = () => {
+  return (
+    <Container>
+      <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="dark-content"
+      />
 
-    return (
+      <Close source={require("../../assets/x-top-screen.png")} />
 
-        <Container>
-            <StatusBar translucent backgroundColor="transparent" barStyle="dark-content" />
+      <Logo source={require("../../assets/VitalHub_Logo1.png")} />
 
-            <Close source={require('../../assets/x-top-screen.png')}/>
+      <Title>Redefinir Senha</Title>
 
-            <Logo source={require('../../assets/VitalHub_Logo1.png')} />
+      <DescriptionPassword description={"Insira e confirme a sua nova senha"} />
 
-            <Title>Redefinir Senha</Title>
+      <Input
+        placeholder={"Nova Senha"}
+        placeholderTextColor={"#49B3BA"}
+        secureTextEntry={true}
+      />
 
-            <DescriptionPassword description={"Insira e confirme a sua nova senha"} />
+      <Input
+        placeholder={"Confirmar nova senha"}
+        placeholderTextColor={"#49B3BA"}
+        secureTextEntry={true}
+      />
 
-            <Input
-                placeholder={"Nova Senha"}
-                placeholderTextColor={'#49B3BA'}
-                secureTextEntry={true}
-            />
-
-            <Input
-                placeholder={"Confirmar nova senha"}
-                placeholderTextColor={'#49B3BA'}
-                secureTextEntry={true}
-            />
-
-            <ButtonNormal text={"Confirmar nova senha"}/>
-            
-        </Container>
-
-    )
-
-}
+      <ButtonNormal text={"Confirmar nova senha"} />
+    </Container>
+  );
+};

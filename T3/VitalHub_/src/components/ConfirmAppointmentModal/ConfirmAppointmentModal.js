@@ -1,69 +1,78 @@
-import { Modal } from "react-native"
-import { ModalContent, PatientModal } from "../CancellationModal/StyleCancellationModal"
-import { Title, TitleModalSchedule } from "../Title/StyleTitle"
-import { DescriptionConfirmModal, SmallDescriptionModal } from "../Descriptions/StyledDescriptions"
-import { BoxDescriptions, BoxMedicoConsulta } from "./StyleConfirmAppointmentModal"
-import { Label } from "../Label/Label"
-import { LabelDescription } from "../Label/StyleLabel"
-import { CardCancelLess, CardCancelLessModal, DescripritionModalSmall, DescripritionModalSmall2 } from "../Descriptions/Descriptions"
-import { ButtonLargeConfirmModal, ButtonLargeModal, ButtonLargeSelect } from "../Button/Button"
-
+import { Modal } from "react-native";
+import {
+  ModalContent,
+  PatientModal,
+} from "../CancellationModal/StyleCancellationModal";
+import { Title, TitleModalSchedule } from "../Title/StyleTitle";
+import {
+  DescriptionConfirmModal,
+  SmallDescriptionModal,
+} from "../Descriptions/StyledDescriptions";
+import {
+  BoxDescriptions,
+  BoxMedicoConsulta,
+} from "./StyleConfirmAppointmentModal";
+import { Label } from "../Label/Label";
+import { LabelDescription } from "../Label/StyleLabel";
+import {
+  CardCancelLess,
+  CardCancelLessModal,
+  DescripritionModalSmall,
+  DescripritionModalSmall2,
+} from "../Descriptions/Descriptions";
+import {
+  ButtonLargeConfirmModal,
+  ButtonLargeModal,
+  ButtonLargeSelect,
+} from "../Button/Button";
 
 export const ConfirmAppointmentModal = ({
-    visible,
-    navigation,
-    setShowModal = null,
-    ...rest
+  navigation,
+  visible,
+  setShowModal = null,
+  ...rest
 }) => {
-    return (
+  return (
+    <Modal {...rest} visible={visible} transparent={true} animationType="fade">
+      <PatientModal>
+        <ModalContent>
+          <Title>Agendar Consulta</Title>
 
-        <Modal
-            {...rest}
-            visible={visible}
-            transparent={true}
-            animationType="fade">
+          <DescriptionConfirmModal>
+            Consulte os dados selecionados para a sua consulta
+          </DescriptionConfirmModal>
 
+          <BoxDescriptions>
+            <LabelDescription>Data da consulta</LabelDescription>
 
-            <PatientModal>
+            <DescripritionModalSmall text={"1 de Novembro de 2023"} />
 
-                <ModalContent>
+            <LabelDescription>Médico(a) da consulta</LabelDescription>
 
-                    <Title>Agendar Consulta</Title>
+            <DescripritionModalSmall2 text={"Dra Alessandra"} />
 
-                    <DescriptionConfirmModal >Consulte os dados selecionados para a sua consulta</DescriptionConfirmModal>
+            <DescripritionModalSmall text={"Demartologa, Esteticista"} />
 
-                    <BoxDescriptions>
+            <LabelDescription>Local da consulta</LabelDescription>
 
-                        <LabelDescription>Data da consulta</LabelDescription>
+            <DescripritionModalSmall text={"São Paulo, SP"} />
 
-                        <DescripritionModalSmall text={"1 de Novembro de 2023"} />
+            <LabelDescription>Tipo da consulta</LabelDescription>
 
-                        <LabelDescription>Médico(a) da consulta</LabelDescription>
+            <DescripritionModalSmall text={"Rotina"} />
+          </BoxDescriptions>
 
-                        <DescripritionModalSmall2 text={"Dra Alessandra"} />
+          <ButtonLargeConfirmModal
+            onPress={() => navigation.navigate("SelecionarClinica")}
+            text={"Confirmar"}
+          />
 
-                        <DescripritionModalSmall text={"Demartologa, Esteticista"} />
-
-                        <LabelDescription>Local da consulta</LabelDescription>
-
-                        <DescripritionModalSmall text={"São Paulo, SP"} />
-
-                        <LabelDescription>Tipo da consulta</LabelDescription>
-
-                        <DescripritionModalSmall text={"Rotina"} />
- 
-                    </BoxDescriptions> 
-
-                    <ButtonLargeConfirmModal onPress={() => { navigation.navigate("PacientePerfil") }} text={"Confirmar"} />
-
-                    <CardCancelLessModal onPressCancel={() => setShowModal(false)} text={"Cancelar"} />
-
-                </ModalContent>
-
-            </PatientModal>
-
-        </Modal>
-
-
-    )
-}
+          <CardCancelLessModal
+            onPressCancel={() => setShowModal(false)}
+            text={"Cancelar"}
+          />
+        </ModalContent>
+      </PatientModal>
+    </Modal>
+  );
+};

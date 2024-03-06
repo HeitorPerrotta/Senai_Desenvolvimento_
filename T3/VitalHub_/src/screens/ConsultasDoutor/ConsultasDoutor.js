@@ -10,7 +10,6 @@ import { FilterButton } from "../../components/Button/Button"
 import { useState } from "react"
 import { Card } from "../../components/Cards/Cards"
 import { CancellationModal } from "../../components/CancellationModal/CancellationModal"
-import { CardCancelLess } from "../../components/Descriptions/Descriptions"
 import { AppointmentModal } from "../../components/AppointmentModal/AppointmentModal"
 
 

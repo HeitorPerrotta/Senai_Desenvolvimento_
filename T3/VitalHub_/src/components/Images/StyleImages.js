@@ -15,7 +15,7 @@ export const Seta = styled.Image`
   margin-top: 100px;
 `;
 
-export const Close = styled.Image`
+export const Close = styled.View`
   margin-right: 320px;
   margin-top: 100px;
 `;
