@@ -1,50 +1,54 @@
-import { Title } from "../../components/Title/StyleTitle";
-import { Container } from "../../components/Container/StyleContainer";
-import { Logo } from "../../components/Images/StyleImages";
-import { Input } from "../../components/Input/Input";
-import { LinkMedium } from "../../components/TextMedium/TextMedium";
-import { LinkAccount } from "../../components/Link/Link";
+import { Container } from "../../components/Container/Style"
+import { Logo } from "../../components/Logo/Style"
+import { Title } from "../../components/Title/Style"
+import { Input } from "../../components/Input/Style"
+import { ButtonGoogleTitle, Button, ButtonGoogle, ButtonTitle } from "../../components/Button/Style"
+import { ContentAccount } from "../../components/ContentAccount/Style"
+import { TextAccount } from "../../components/TextAccount/Style"
+import { AntDesign } from '@expo/vector-icons'
+import { Link, LinkBlue } from "../../components/Link/Style"
 
-import { ButtonGoogle, ButtonNormal } from "../../components/Button/Button";
-import { StatusBar } from "react-native";
+export const Login = ({navigation}) => {
 
-export const Login = ({ navigation }) => {
-  async function Login() {
-    navigation.navigate("Main");
-  }
-  return (
-    <Container>
-      <StatusBar
-        translucent
-        backgroundColor="transparent"
-        barStyle="dark-content"
-      />
+    async function Login() {
+        navigation.replace("Main")
+    }
 
-      <Logo source={require("../../assets/VitalHub_Logo1.png")} />
+    return(
+        <Container>
 
-      <Title>Entrar ou criar conta</Title>
+            <Logo
+                source={require('../../../src/assets/img/VitalHub_LogoAzul.png')}
+            />
 
-      <Input
-        placeholder={"Usuário ou E-mail"}
-        placeholderTextColor={"#49B3BA"}
-      />
+            <Title>Entrar ou criar conta</Title>
+            
+            <Input
+                placeholder={'Usuário ou E-mail'}
+            />
 
-      <Input
-        placeholder={"Senha"}
-        placeholderTextColor={"#49B3BA"}
-        secureTextEntry={true}
-      />
+            <Input
+                placeholder={'Senha'}
+            />
 
-      <LinkMedium
-        textLink={"Esqueceu sua senha ?"}
-        onPress={() => navigation.navigate("Esqueceu Senha")}
-      />
+            <Link onPress={() => navigation.replace('EsqueceuSenha')}>Esqueceu sua senha?</Link>
 
-      <ButtonNormal onPress={(e) => Login()} text={"Entrar"} />
+            <Button onPress={(e) => Login()}>
+                <ButtonTitle>Entrar</ButtonTitle>
+            </Button>
 
-      <ButtonGoogle text={"Entrar com Google"} />
+            <ButtonGoogle>
+                <AntDesign
+                name="google"   
+                size={20} color='#496BBA'
+                />
+                <ButtonGoogleTitle>Entrar com Google</ButtonGoogleTitle>
+            </ButtonGoogle>
+            
+            <ContentAccount>
+                <TextAccount>Não tem conta? <LinkBlue onPress={() => navigation.replace('Cadastro')}>Crie uma conta agora!</LinkBlue></TextAccount>
+            </ContentAccount>
 
-      <LinkAccount onPress={() => navigation.navigate("Cadastro")} />
-    </Container>
-  );
-};
+        </Container>
+    )
+}

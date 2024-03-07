@@ -1,49 +1,38 @@
-import { StatusBar } from 'react-native'
-import { ButtonNormal } from '../../components/Button/Button'
-import { NormalButton } from '../../components/Button/StyleButton'
-import { ButtonText } from '../../components/ButtonText/StyleButtonText'
-import { Container } from '../../components/Container/StyleContainer'
-import { DescriptionPassword } from '../../components/Descriptions/Descriptions'
-import { Input } from '../../components/Input/Input'
-import { Cancel } from '../../components/Link/Link'
-import { Title } from '../../components/Title/StyleTitle'
-import { LogoCreateAccount } from '../../components/Images/StyleImages'
-
+import { ButtonCadastro, ButtonTitle } from '../../components/Button/Style'
+import { Container } from '../../components/Container/Style'
+import { LinkCancel } from '../../components/Link/Style'
+import { Logo } from '../../components/Logo/Style'
+import { Subtitle, Title } from '../../components/Title/Style'
+import { Input } from "../../components/Input/Style"
 
 export const Cadastro = ({ navigation }) => {
-
     return (
-
         <Container>
-
-            <StatusBar translucent backgroundColor="transparent" barStyle="dark-content" />
-
-            <LogoCreateAccount source={require('../../assets/VitalHub_Logo1.png')} />
-
-            <Title>Criar Conta</Title>
-
-            <DescriptionPassword description={"Insira seu endereço de e-mail e senha para realizar seu cadastro."} />
-
-            <Input
-                placeholder={"Usuário ou E-mail"}
-                placeholderTextColor={'#49B3BA'}
-            />
-            <Input
-                placeholder={"Senha"}
-                placeholderTextColor={'#49B3BA'}
-                secureTextEntry={true}
-            />
-            <Input
-                placeholder={"Confirmar senha"}
-                placeholderTextColor={'#49B3BA'}
-                secureTextEntry={true}
+            <Logo
+                source={require('../../../src/assets/img/VitalHub_LogoAzul.png')}
             />
 
-            <ButtonNormal text={"Cadastrar"} />
+            <Title>Criar conta</Title>
 
-            <Cancel onPress={() => { navigation.navigate("Login") }} />
+            <Subtitle>Insira seu endereço de e-mail e senha para realizar seu cadastro.</Subtitle>
+
+
+            <Input
+                placeholder={'Usuário ou E-mail'}
+            />
+            <Input
+                placeholder={'Senha'}
+            />
+            <Input
+                placeholder={'Confirmar senha'}
+            />
+
+            <ButtonCadastro onPress={() => navigation.replace('Login')}>
+                <ButtonTitle>Cadastrar</ButtonTitle>
+            </ButtonCadastro>
+
+            <LinkCancel onPress={() => navigation.replace('Login')}>Cancelar</LinkCancel>
 
         </Container>
     )
-
 }

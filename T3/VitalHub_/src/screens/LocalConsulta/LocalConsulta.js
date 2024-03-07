@@ -1,60 +1,44 @@
-import { StatusBar } from "react-native";
-import {
-  BoxLocalizationHome,
-  ButtonHomeContainer,
-  Container,
-  ContainerCepCidade,
-} from "../../components/Container/StyleContainer";
-import { AgeTextCard } from "../../components/Descriptions/StyledDescriptions";
-import { MapsImage } from "../../components/Images/StyleImages";
-import { InputBox } from "../../components/InputBox/InputBox";
-import { Title, TitleMap } from "../../components/Title/StyleTitle";
-import {
-  ButtonLargeLocalization,
-  ButtonLargeSelect,
-} from "../../components/Button/Button";
+import { ContainerP, ContainerSub, PerfilCityInputsContainer } from "../../components/Container/Style"
+import { ProfilePicSub } from "../../components/Image/Style"
+import { PerfilInput } from "../../components/Input/PerfilInput/Index"
+import { InputBox } from "../../components/InputBox/Index"
+import { TextGray, TitleSub } from "../../components/Title/Style"
 
-import { FontAwesome } from "@expo/vector-icons";
+export const LocalConsulta = () => {
+    return (
 
-export const LocalConsulta = ({navigation}) => {
-  return (
-    <Container>
-      <StatusBar translucent backgroundColor="transparent" />
-      <MapsImage source={require("../../assets/Maps.png")} />
+        <ContainerP>
+            <ProfilePicSub
+                source={require('../../../src/assets/img/Mapa.png')}
+                resizeMode='cover'
+            />
 
-      <TitleMap>Clínica Natureh</TitleMap>
-      <AgeTextCard>São Paulo, SP</AgeTextCard>
+            <TitleSub>Clínica Natureh</TitleSub>
+            <TextGray>São Paulo, SP</TextGray>
 
-      <InputBox
-        placeholderTextColor={"#33303E"}
-        textLabel={"Endreço"}
-        placeholder={"Ex. Rua Hemifesrio 510"}
-        // keyboardType="numeric"
-        editable={true}
-      />
+            <PerfilInput
+                inputLabel="Endereço"
+                inputPlaceholder="Rua Exemplo, 000"
+                containerWidth="90%"
+            />
+            <PerfilCityInputsContainer>
+                <PerfilInput
+                    inputLabel="Número"
+                    inputPlaceholder="000"
+                    containerWidth="40%"
+                    inputType={"numeric"}
 
-      <ContainerCepCidade>
-        <InputBox
-          placeholderTextColor={"#33303E"}
-          textLabel={"Número"}
-          placeholder={"Ex.510"}
-          keyboardType="numeric"
-          editable={true}
-          fieldWidth={40}
-        />
-        <InputBox
-          placeholderTextColor={"#33303E"}
-          textLabel={"Bairro"}
-          placeholder={"Ex.Guarulhos"}
-          editable={true}
-          fieldWidth={40}
-        />
-      </ContainerCepCidade>
+                />
+                <PerfilInput
+                    inputLabel="Bairro"
+                    inputPlaceholder="Bairro-Estado"
+                    containerWidth="40%"
+                />
 
-     
-      
-        <ButtonLargeLocalization onPress={() => navigation.navigate("Consultas Paciente")}  text={"Voltar a Home"} />
-     
-    </Container>
-  );
-};
+            </PerfilCityInputsContainer>
+
+        </ContainerP>
+
+    )
+}
+

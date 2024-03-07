@@ -1,90 +1,74 @@
-import { StatusBar } from "react-native";
-import {
-  Container,
-  FlatContainerSelect,
-  ScrollContainer,
-} from "../../components/Container/StyleContainer";
-import { TitleSelect } from "../../components/Title/StyleTitle";
-import { CardSelectDoctor } from "../../components/Cards/Cards";
-import { ButtonLarge, ButtonLargeSelect } from "../../components/Button/Button";
-import { CancelLessMargin } from "../../components/Descriptions/StyledDescriptions";
 import { useState } from "react";
-import { ScheduleModal } from "../../components/ScheduleModal/ScheduleModal";
-import { PatientAppointmentModal } from "../../components/PatientAppointmentModal/PatientAppointmentModal";
+import { ClinicContent, ContainerC } from "../../components/Container/Style";
+import { TitleBlackDoctor } from "../../components/Cards/CardMedico/Style";
+import { ListClinic } from "../../components/Cards/CardClinica/Style";
+import { CardMedico } from "../../components/Cards/CardMedico/CardMedico";
+import {
+  ButtonModal,
+  ButtonSub,
+  ButtonSubText,
+} from "../../components/Modals/ModalCancel/Style";
+import { ButtonTitle } from "../../components/Button/Style";
 
-// const [showModalCancel, setShowModalCancel] = useState(false);
-
-// const [showModal, setShowModal] = useState(false);
-
-export const SelecionarMedico = ({navigation}) => {
-  const image = require("../../assets/ImageCard.png");
-
-  const dataItens = [
+export const SelecionarMedico = ({ navigation }) => {
+  const Doctor = [
     {
-      id: "fsdfsfsdf",
-      doctorArea: "Dermatóloga, Esteticista",
-      image: image,
-      name: "Dr Alessandra",
+      id: 1,
+      nome: Doctor,
+      source: require("../../../src/assets/img/DoctorImage.png"),
+      name: "Dra Alessandra",
+      type: "Demartologa, Esteticista",
     },
+
     {
-      id: "fsdfsf",
-      doctorArea: "Cirurgião, Cardiologista",
-      image: image,
+      id: 2,
+      nome: Doctor,
+      source: require("../../../src/assets/img/DoctorImage2.png"),
       name: "Dr Kumushiro",
+      type: "Cirurgião, Cardiologista",
     },
+
     {
-      id: "fsdf",
-      doctorArea: "Clínico, Pediatra",
-      image: image,
+      id: 3,
+      nome: Doctor,
+      source: require("../../../src/assets/img/DoctorImage3.png"),
       name: "Dr Rodrigo Santos",
+      type: "Clínico, Pediatra",
     },
   ];
+  const [borderColor, setBorderColor] = useState(null);
 
   return (
-    <ScrollContainer>
-      <StatusBar
-        translucent
-        backgroundColor="transparent"
-        barStyle="dark-content"
-      />
+    <ContainerC>
+      <ClinicContent>
+        {/* titulo */}
+        <TitleBlackDoctor>Selecionar médico</TitleBlackDoctor>
 
-      <Container>
-        <TitleSelect>Selecionar Médico</TitleSelect>
-
-        <FlatContainerSelect
-          data={dataItens}
+        {/* lidta as especialidades dos medicos */}
+        <ListClinic
+          data={Doctor}
+          keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
-            <CardSelectDoctor
-              doctorArea={item.doctorArea}
+            // card do medico
+            <CardMedico
+              clickButton={item.id == borderColor}
+              onPress={() => setBorderColor(item.id)}
+              source={item.source}
               name={item.name}
-              url={image}
+              type={item.type}
             />
           )}
-          keyExtractor={(item) => item.id}
         />
-        {/* 
-                <CardSelectDoctor doctorArea={'Dermatóloga, Esteticista'} url={require('../../assets/DermaImage.png')} name={'Dr Alessandra'}/>
+        {/* Botão */}
+        <ButtonModal onPress={() => navigation.replace("Calendario")}>
+          {/* titulo do botao */}
+          <ButtonTitle>Continuar</ButtonTitle>
+        </ButtonModal>
 
-                <CardSelectDoctor doctorArea={'Cirurgião, Cardiologista'} url={require('../../assets/DermaImage.png')} name={'Dr Kumushiro'}/>
-
-                <CardSelectDoctor doctorArea={'Clínico, Pediatra'} url={require('../../assets/DermaImage.png')} name={'Dr Rodrigo Santos'}/> */}
-
-        <ButtonLargeSelect  onPress={() => { navigation.navigate("Selecionar Data") }} text={"Continuar"} />
-
-        <CancelLessMargin>Cancelar</CancelLessMargin>
-
-        {/* <ScheduleModal visible={showModal} setShowModal={setShowModal} /> */}
-
-        {/* <PatientAppointmentModal
-          visible={showModalAppointment}
-          setShowModalAppointment={setShowModalAppointment}
-        /> */}
-
-        {/* <CancellationModal
-          visible={showModalCancel}
-          setShowModalCancel={setShowModalCancel}
-        /> */}
-      </Container>
-    </ScrollContainer>
+        <ButtonSub onPress={() => navigation.replace("SelecionarClinica")}>
+          <ButtonSubText>Cancelar</ButtonSubText>
+        </ButtonSub>
+      </ClinicContent>
+    </ContainerC>
   );
 };

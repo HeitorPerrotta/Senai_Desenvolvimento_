@@ -1,64 +1,56 @@
 import { Button, View } from "react-native";
 
-export const Navegacao = ({ navigation }) => {
-  return (
-    <View>
-      <Button title="Login" onPress={() => navigation.navigate("Login")} />
-      <Button
-        title="Esqueceu Senha"
-        onPress={() => navigation.navigate("Esqueceu Senha")}
-      />
-      <Button
-        title="Verificar Email"
-        onPress={() => navigation.navigate("Verificar Email")}
-      />
-      <Button
-        title="Redefinir Senha"
-        onPress={() => navigation.navigate("Redefinir Senha")}
-      />
-      <Button
-        title="Cadastro"
-        onPress={() => navigation.navigate("Cadastro")}
-      />
-      <Button
-        title="Paciente Perfil"
-        onPress={() => navigation.navigate("Paciente Perfil")}
-      />
-      <Button
-        title="Medico Prontuario"
-        onPress={() => navigation.navigate("Medico Prontuario")}
-      />
-      <Button
-        title="Consultas Medico"
-        onPress={() => navigation.navigate("Consultas Medico")}
-      />
-      <Button
-        title="Consultas Paciente"
-        onPress={() => navigation.navigate("Consultas Paciente")}
-      />
-
-      <Button
-        title="Selecionar Medico"
-        onPress={() => navigation.navigate("Selecionar Medico")}
-      />
-
-      <Button
-        title="Selecionar Clinica"
-        onPress={() => navigation.navigate("Selecionar Clinica")}
-      />
-      <Button
-        title="Selecionar Data"
-        onPress={() => navigation.navigate("Selecionar Data")}
-      />
-      <Button
-        title="Local Consulta"
-        onPress={() => navigation.navigate("Local Consulta")}
-      />
-
-      <Button
-        title="Ver Prontuario"
-        onPress={() => navigation.navigate("Ver Prontuario")}
-      />
-    </View>
-  );
-};
+export const Navegacao = ({navigation}) => {
+    return(
+        <View>
+            <Button
+                title="login"
+                onPress={() => navigation.navigate('Login')}
+            />
+            <Button
+                title="Verifique seu email"
+                onPress={() => navigation.navigate('VerifiqueEmail')}
+            />
+            <Button
+                title="Nova senha"
+                onPress={() => navigation.navigate('NovaSenha')}
+            />
+            <Button
+                title="Perfil"
+                onPress={() => navigation.navigate('Perfil')}
+            />
+            <Button
+                title="Prontuario"
+                onPress={() => navigation.navigate('Prontuario')}
+            />
+            <Button
+                title="Consultas Medico"
+                onPress={() => navigation.navigate('ConsultasMedico')}
+            />
+            <Button
+                title="Consultas Paciente"
+                onPress={() => navigation.navigate('ConsultasPaciente')}
+            />
+            <Button
+                title="Clínica"
+                onPress={() => navigation.navigate('Clinica')}
+            />
+            <Button
+                title="SelecionarMedico"
+                onPress={() => navigation.navigate('SelecionarMedico')}
+            />
+            <Button
+                title="Calendário"
+                onPress={() => navigation.navigate('Calendario')}
+            />
+            <Button
+                title="LocalConsulta"
+                onPress={() => navigation.navigate('LocalConsulta')}
+            />
+            <Button
+                title="Prescrição"
+                onPress={() => navigation.navigate('Prescricao')}
+            />
+        </View>
+    );
+}

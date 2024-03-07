@@ -1,41 +1,29 @@
-import { ButtonNormal } from "../../components/Button/Button";
-import { Container } from "../../components/Container/StyleContainer";
-import { DescriptionPassword } from "../../components/Descriptions/Descriptions";
-import { Input } from "../../components/Input/Input";
-import { Close, Logo } from "../../components/Images/StyleImages";
-import { Title } from "../../components/Title/StyleTitle";
-import { StatusBar } from "expo-status-bar";
+import { ButtonTitle, Button } from "../../components/Button/Style"
+import { Container } from "../../components/Container/Style"
+import { InputSenha } from "../../components/Input/Style"
+import { Logo } from "../../components/Logo/Style"
+import { Subtitle, Title } from "../../components/Title/Style"
 
-export const RedefinirSenha = () => {
-  return (
-    <Container>
-      <StatusBar
-        translucent
-        backgroundColor="transparent"
-        barStyle="dark-content"
-      />
+export const RedefinirSenha = ({navigation}) => {
+    return(
+        <Container>
+            <Logo
+                source={require('../../../src/assets/img/VitalHub_LogoAzul.png')}
+            />
 
-      <Close source={require("../../assets/x-top-screen.png")} />
+            <Title>Redefinir senha</Title>
+            <Subtitle>Insira e confirme a sua nova senha</Subtitle>
 
-      <Logo source={require("../../assets/VitalHub_Logo1.png")} />
+            <InputSenha
+                placeholder='Nova senha'
+            />
+            <InputSenha
+                placeholder='Confirmar nova senha'
+            />
 
-      <Title>Redefinir Senha</Title>
-
-      <DescriptionPassword description={"Insira e confirme a sua nova senha"} />
-
-      <Input
-        placeholder={"Nova Senha"}
-        placeholderTextColor={"#49B3BA"}
-        secureTextEntry={true}
-      />
-
-      <Input
-        placeholder={"Confirmar nova senha"}
-        placeholderTextColor={"#49B3BA"}
-        secureTextEntry={true}
-      />
-
-      <ButtonNormal text={"Confirmar nova senha"} />
-    </Container>
-  );
-};
+            <Button onPress={() => navigation.replace('Login')}>
+                <ButtonTitle>confirmar nova senha</ButtonTitle>
+            </Button>
+        </Container>
+    )
+}

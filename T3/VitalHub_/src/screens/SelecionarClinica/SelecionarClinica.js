@@ -1,85 +1,77 @@
-import { ButtonLargeSelect, ButtonLargeSelectClinic } from "../../components/Button/Button";
-import { LargeButtonSelect } from "../../components/Button/StyleButton";
-import { CardSelecClinc } from "../../components/Cards/Cards";
-import { CardContainer } from "../../components/Cards/StyleCards";
-import {
-  Container,
-  ContainerClinic,
-  FlatContainerSelect,
-  FlatContainerSelectClinic,
-  ScrollContainer,
-} from "../../components/Container/StyleContainer";
-import { CancelLessMargin } from "../../components/Descriptions/StyledDescriptions";
-import { TitleSelect } from "../../components/Title/StyleTitle";
-import { NameTitle } from "../../components/Title/Title";
+import { useState } from "react"
+import { ClinicContent, ContainerC } from "../../components/Container/Style"
+import { TitleBlack } from "../../components/Title/Style"
+import { CardClinic } from "../../components/Cards/CardClinica/CardClinica"
+import { ListClinic } from "../../components/Cards/CardClinica/Style"
+import { ButtonSub, ButtonSubText } from "../../components/Modals/ModalCancel/Style"
+import { ButtonModal, ButtonTitle } from "../../components/Button/Style"
 
 export const SelecionarClinica = ({navigation}) => {
-  const dataItens = [
-    {
-      id: "1",
-      NameClinic: "Clínica Natureh",
-      Location: "Sao Paulo, SP",
-      Rate: "4,5",
-      OpenTime: "Seg-Sex",
-    },
-    {
-      id: "2",
-      NameClinic: "Diamond Pró-Mulher",
-      Location: "Sao Paulo, SP",
-      Rate: "4,8",
-      OpenTime: "Seg-Sex",
-    },
-    {
-      id: "3",
-      NameClinic: "Clinica Villa Lobos",
-      Location: "Taboão, SP",
-      Rate: "4,2",
-      OpenTime: "Seg-Sab",
-    },
-    {
-      id: "4",
-      NameClinic: "SP Oncologia Clínica",
-      Location: "Taboão, SP",
-      Rate: "4,2",
-      OpenTime: "Seg-Sex",
-    },
+    const SelecionarClinica = [
+        {id: 1, nome: 'Clinica',                     
+        name:'Clínica Natureh',
+        rated:'4,5',
+        time:'Seg-Sex',
+        city: 'São Paulo, SP',
+        border: '#496BBA'},
+    
+        {id: 2, nome: 'Clinica',                     
+        name:'Diamond Pró-Mulher',
+        rated:'4,8',
+        time:'Seg-Sex',
+        border:'transparent',
+        city:'São Paulo, SP',
+        border: 'transparent' },
+    
+        {id: 3, nome: 'Clinica',                     
+        name:'Clinica Villa Lobos',
+        rated:'4,2',
+        time:'Seg-Sab',
+        border:'transparent',
+        city:'Taboão, SP',
+        border: 'transparent' },
+    
+        {id: 4, nome: 'Clinica',                     
+        name:'SP Oncologia Clínica',
+        rated:'4,2',
+        time:'Seg-Sab',
+        border:'transparent',
+        city:'Taboão, SP',
+        border: 'transparent'},
+    ]
 
-    {
-      id: "5",
-      NameClinic: "SP Doncologia Clínica",
-      Location: "Taboão, SP",
-      Rate: "4,2",
-      OpenTime: "Seg-Sex",
-    },
-    {
-      id: "6",
-      NameClinic: "SP Clínica Ortopedica",
-      Location: "Taboão, SP",
-      Rate: "4,2",
-      OpenTime: "Seg-Sex",
-    },
-  ];
+    const [borderColor, setBorderColor] = useState(null)
 
-  return (
-    <Container>
-      <TitleSelect>Selecionar clínica</TitleSelect>
+    return (
+        <ContainerC>
+            <ClinicContent>
+                <TitleBlack>Selecionar clínica</TitleBlack>
+                <ListClinic
+                
+                    data={SelecionarClinica}
+                    keyExtractor={(item) => item.id}
+                    renderItem={({item}) =>
+                         (
+                        <CardClinic
 
-      <FlatContainerSelectClinic
-        data={dataItens}
-        renderItem={({ item }) => (
-          <CardSelecClinc
-            NameClinic={item.NameClinic}
-            Location={item.Location}
-            Rate={item.Rate}
-            OpenTime={item.OpenTime}
-          />
-        )}
-        keyExtractor={(item) => item.id}
-      />
+                            clickButton={item.id == borderColor}
+                            onPress={() => setBorderColor(item.id)}
+                            name={item.name}
+                            rated={item.rated}
+                            time={item.time}
+                            city={item.city}
+                        />
+                        )}
+                />
+                {/* Botão */}
+                <ButtonModal onPress={() => navigation.replace('SelecionarMedico')}>
+                    <ButtonTitle>Continuar</ButtonTitle>
+                </ButtonModal>
 
-      <ButtonLargeSelectClinic onPress={() => { navigation.navigate("Selecionar Data") }} text={"Continuar"} />
-
-      <CancelLessMargin>Cancelar</CancelLessMargin>
-    </Container>
-  );
-};
+                <ButtonSub onPress={() => navigation.replace('ConsultasPaciente')}>
+                    <ButtonSubText>Cancelar</ButtonSubText>
+                </ButtonSub>
+            </ClinicContent>
+        </ContainerC>
+    )
+}

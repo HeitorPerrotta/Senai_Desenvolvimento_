@@ -1,38 +1,29 @@
-import { StatusBar } from "react-native"
-import { ButtonNormal } from "../../components/Button/Button"
-import { Container } from "../../components/Container/StyleContainer"
-import { DescriptionPassword } from "../../components/Descriptions/Descriptions"
-import { Input } from "../../components/Input/Input"
-import { Logo, Seta } from "../../components/Images/StyleImages"
-import { Title } from "../../components/Title/StyleTitle"
+import { Button, ButtonTitle } from "../../components/Button/Style"
+import { Container } from "../../components/Container/Style"
+import { Input } from "../../components/Input/Style"
+import { LinkCancel } from "../../components/Link/Style"
+import { Logo } from "../../components/Logo/Style"
+import { Subtitle, Title } from "../../components/Title/Style"
 
-
-export const EsqueceuSenha = ({ navigation }) => {
-
-    return (
-
+export const EsqueceuSenha = ({navigation}) => {
+    return(
         <Container>
+        <Logo
+        source={require('../../../src/assets/img/VitalHub_LogoAzul.png')}
+        />
+        <Title>Recuperar Senha</Title>
+        <Subtitle>Digite abaixo seu email cadastrado que enviaremos um link para recuperação de senha</Subtitle>
 
-             
+        <Input
+         placeholder={'Usuário ou E-mail'}
+         />
 
-            <Seta source={require('../../assets/Seta.png')} />
+         <Button onPress={() => navigation.replace('VerifiqueEmail')}>
+            <ButtonTitle>Continuar</ButtonTitle>
+         </Button>
 
-            <Logo source={require('../../assets/VitalHub_Logo1.png')} />
+         <LinkCancel onPress={() => navigation.replace('Login')}>Cancelar</LinkCancel>
 
-            <Title>Recuperar senha</Title>
-
-            <DescriptionPassword description={"Digite abaixo seu email cadastrado que enviaremos um link para recuperação de senha"} />
-
-            <Input
-                placeholder={"Usuário ou E-mail"}
-                placeholderTextColor={'#49B3BA'}
-            />
-
-            <ButtonNormal text={"Continuar"} onPress={() => navigation.navigate("Verificar Email")} />
-
-
-        </Container>
-
+    </Container>
     )
-
 }
