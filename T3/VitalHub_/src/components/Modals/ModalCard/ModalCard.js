@@ -93,7 +93,7 @@ export const CardModalPaciente = ({
     </Modal>
   );
 };
-export const AppointmentModalConsulta = ({
+export const CardModalConsulta = ({
   visible,
   navigation,
   setShowModalAppointment,
@@ -137,8 +137,7 @@ export const AppointmentModalConsulta = ({
 
           {/* Botão */}
           <ButtonModalCardClinic
-            title="LocalConsulta"
-            onPress={() => navigation.replace("LocalConsulta")}
+            onPress={() => navigation.navigate('LocalConsulta')}
           >
             <ButtonTitle>Ver local da consulta</ButtonTitle>
           </ButtonModalCardClinic>

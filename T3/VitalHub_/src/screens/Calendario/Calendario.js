@@ -5,7 +5,7 @@ import CalendarComponent from "../../components/Calendar/Calendar"
 import { ButtonModal, ButtonSub, ButtonSubText, ModalSubtitle2 } from "../../components/Modals/ModalConsulta/Style"
 import InputSelect from "../../components/Input/InputSelect/InputSelect"
 import { ButtonTitle } from "../../components/Button/Style"
-import { AppointmentModalConsulta } from "../../components/Modals/ModalCard/ModalCard"
+import { CardModalConsulta } from "../../components/Modals/ModalCard/ModalCard"
 
 
 export const CalendarioPaciente = ({navigation}) => {
@@ -34,7 +34,8 @@ export const CalendarioPaciente = ({navigation}) => {
                 </ButtonSub>
             </ClinicContent>
 
-            <AppointmentModalConsulta
+            <CardModalConsulta
+                navigation={navigation}
                 visible={showModalAppointment}
                 setShowModalAppointment={setShowModalAppointment}
             />
