@@ -5,7 +5,7 @@ import * as MediaLibary from 'expo-media-library'
 
 import { FontAwesome } from '@expo/vector-icons'
 
-export default function App() {
+export default function CameraProntuario() {
 
   const cameraRef = useRef(null)
 

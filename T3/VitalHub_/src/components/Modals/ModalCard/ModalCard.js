@@ -137,7 +137,7 @@ export const CardModalConsulta = ({
 
           {/* Botão */}
           <ButtonModalCardClinic
-            onPress={() => navigation.navigate('LocalConsulta')}
+            onPress={() => navigation.navigate("Local Consulta")}
           >
             <ButtonTitle>Ver local da consulta</ButtonTitle>
           </ButtonModalCardClinic>

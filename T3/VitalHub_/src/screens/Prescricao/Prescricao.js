@@ -57,7 +57,7 @@ export const Prescricao = ({navigation}) => {
                 </ContainerPic>
 
                 <ContainerLabel>
-                    <ButtonCamera>
+                    <ButtonCamera onPress={() => navigation.replace("Camera")}>
                         <ButtonCameraText>
                             <MaterialCommunityIcons name="camera-plus-outline" size={24} color="white" />
                         </ButtonCameraText>
