@@ -3352,11 +3352,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\54395989870\\Desktop\\API\\Api.Heitor\\Event+.Tarde\\Webapi.Event+.Tarde\\Webapi.Event+.Tarde.csproj",
+      "projectUniqueName": "C:\\Users\\54395989870\\Desktop\\Senai_Desenvolvimento_\\T2\\Sprint 2 - API\\Event+.Tarde\\Webapi.Event+.Tarde\\Webapi.Event+.Tarde.csproj",
       "projectName": "Webapi.Event+.Tarde",
-      "projectPath": "C:\\Users\\54395989870\\Desktop\\API\\Api.Heitor\\Event+.Tarde\\Webapi.Event+.Tarde\\Webapi.Event+.Tarde.csproj",
+      "projectPath": "C:\\Users\\54395989870\\Desktop\\Senai_Desenvolvimento_\\T2\\Sprint 2 - API\\Event+.Tarde\\Webapi.Event+.Tarde\\Webapi.Event+.Tarde.csproj",
       "packagesPath": "C:\\Users\\54395989870\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\54395989870\\Desktop\\API\\Api.Heitor\\Event+.Tarde\\Webapi.Event+.Tarde\\obj\\",
+      "outputPath": "C:\\Users\\54395989870\\Desktop\\Senai_Desenvolvimento_\\T2\\Sprint 2 - API\\Event+.Tarde\\Webapi.Event+.Tarde\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\54395989870\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3439,8 +3439,30 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'System.IdentityModel.Tokens.Jwt' 7.0.0 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'System.IdentityModel.Tokens.Jwt' 7.0.0 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-8g9c-28fc-mcx2",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }
