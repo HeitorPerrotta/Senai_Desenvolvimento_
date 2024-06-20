@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "phi3HWaarKc/+qyHyoAXNn/kwNI7ImbuB2G0kursQiVisEWQOqH8sHwzslv2kEBA/Ow7pL76FX2bhcRxzt2qLA==",
+  "dgSpecHash": "xm5DNnNGPOxgWOOLAnuUqJMIHATzLnRYRQ+wbBn4fePrmHLmCzyKjdfFzbJQvPctv0BgiKf5GWJ0bh2qCFvEhA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\54395989870\\Desktop\\API\\Api.Heitor\\senai.inlock.webApi\\senai.inlock.webApi.csproj",
+  "projectFilePath": "C:\\Users\\54395989870\\Desktop\\Senai_Desenvolvimento_\\T2\\Sprint 2 - API\\senai.inlock.webApi\\senai.inlock.webApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\54395989870\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.10\\microsoft.aspnetcore.authentication.jwtbearer.7.0.10.nupkg.sha512",
     "C:\\Users\\54395989870\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -35,5 +35,26 @@
     "C:\\Users\\54395989870\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
     "C:\\Users\\54395989870\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'System.Data.SqlClient' 4.8.5 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
+      "libraryId": "System.Data.SqlClient",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'System.IdentityModel.Tokens.Jwt' 6.32.2 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

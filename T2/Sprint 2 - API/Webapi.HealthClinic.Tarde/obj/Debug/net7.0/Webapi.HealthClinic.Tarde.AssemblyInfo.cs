@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Webapi.HealthClinic.Tarde")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f06e3c0591d45c1956c27b38cb57c6eb63ce22d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Webapi.HealthClinic.Tarde")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Webapi.HealthClinic.Tarde")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
