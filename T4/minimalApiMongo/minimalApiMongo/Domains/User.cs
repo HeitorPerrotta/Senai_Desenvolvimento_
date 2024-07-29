@@ -1,10 +1,10 @@
-﻿using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson;
 using System.Globalization;
 
 namespace minimalApiMongo.Domains
 {
-    public class Product
+    public class User
     {
         [BsonId]
         [BsonElement("_id"), BsonRepresentation(BsonType.ObjectId)]
@@ -13,12 +13,15 @@ namespace minimalApiMongo.Domains
         [BsonElement("name")]
         public string Name { get; set; }
 
-        [BsonElement("price")]
-        public decimal Price { get; set; }
+        [BsonElement("email")]
+        public string Email { get; set; }
+
+        [BsonElement("password")]
+        public string Password { get; set; }
 
         public Dictionary<string, string> AdditionalAtrributes { get; set; }
 
-        public Product()
+        public User()
         {
             AdditionalAtrributes = new Dictionary<string, string>();
         }

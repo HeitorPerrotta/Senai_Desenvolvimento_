@@ -53,7 +53,7 @@ namespace minimalApiMongo.Controller
             }
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(string id)
         {
             try
@@ -86,9 +86,15 @@ namespace minimalApiMongo.Controller
                     product.Price = res.First().Price;
                 }
 
+                if (product.AdditionalAtrributes == null)
+                {
+                    product.AdditionalAtrributes = res.First().AdditionalAtrributes;
+                }
+
                 var update = Builders<Product>.Update
                     .Set(p => p.Name, product.Name)
-                    .Set(p => p.Price, product.Price);
+                    .Set(p => p.Price, product.Price)
+                    .Set(p => p.AdditionalAtrributes, product.AdditionalAtrributes);
 
                 await _product.UpdateOneAsync(filter, update);
 
@@ -108,7 +114,9 @@ namespace minimalApiMongo.Controller
                 var filter = Builders<Product>.Filter.Eq(p => p.Id, id);
                 var result = _product.Find(filter);
 
-                return Ok(result.First());
+                return _product is not null ? Ok(_product) : NotFound();
+
+                //return Ok(result.First());
             }
             catch (Exception e)
             {
