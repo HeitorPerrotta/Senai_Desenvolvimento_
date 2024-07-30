@@ -13,10 +13,14 @@ namespace minimalApiMongo.Controller
     public class OrderController : ControllerBase
     {
         private readonly IMongoCollection<Order> _order;
+        private readonly IMongoCollection<Client> _client;
+        private readonly IMongoCollection<Product> _product;
 
         public OrderController(MongoDbService mongoDbService)
         {
             _order = mongoDbService.GetDatabase.GetCollection<Order>("order");
+            _client = mongoDbService.GetDatabase.GetCollection<Client>("client");
+            _product = mongoDbService.GetDatabase.GetCollection<Product>("product");
         }
 
         [HttpGet]
@@ -34,23 +38,47 @@ namespace minimalApiMongo.Controller
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post(Order o)
+        public async Task<ActionResult> Post(OrderViewModel oV)
         {
             try
             {
-                Order newOrder = new Order()
-                {
-                    Id = o.Id,
-                    Date = o.Date,
-                    Status = o.Status,
-                };
+                Order order = new Order();
 
-                await _order.InsertOneAsync(newOrder);
-                return Ok(newOrder);
+                    order.Id = oV.Id;
+                    order.Date = oV.Date;
+                    order.Status = oV.Status;
+                    order.ProductId = oV.ProductId;
+                    order.ClientId = oV.ClientId;
+
+                var client = await _client.Find(c =>  c.Id == order.ClientId).FirstOrDefaultAsync();
+
+                if (client == null)
+                {
+                    return NotFound("Não encontrado");
+                }
+
+                List<Product> lista = new List<Product>();
+
+                foreach (var productId in order.ProductId!)
+                {
+                    var product = await _product.Find(p => p.Id == productId).FirstOrDefaultAsync();
+                    if (product != null)
+                    {
+                        lista.Add(product);
+                    }
+                }
+
+                order.Products = lista;
+
+                order.Client = client;
+    
+                await _order.InsertOneAsync(order);
+
+                return StatusCode(201, order);
             }
             catch (Exception e)
             {
-                return BadRequest(e.Message);
+                return BadRequest();
             }
         }
 
@@ -68,57 +96,51 @@ namespace minimalApiMongo.Controller
             }
         }
 
-        [HttpPut("{id}")]
-        public async Task<ActionResult> Put(string id, Order order)
+        [HttpPut]
+        public async Task<ActionResult<Order>> Put(Order o)
         {
-
             try
             {
-                var filter = Builders<Order>.Filter.Eq(o => o.Id, id);
-                var res = await _order.Find(filter).ToListAsync();
+                Order order = new Order();
 
-                if (order.Id == null)
+                order.Id = o.Id;
+                order.Date = o.Date;
+                order.Status = o.Status;
+                order.ProductId = o.ProductId;
+                order.ClientId = o.ClientId;
+
+                var client = await _client.Find(c => c.Id == order.ClientId).FirstOrDefaultAsync();
+
+                if (client == null)
                 {
-                    order.Id = res.First().Id;
+                    return NotFound("Não encontrado");
                 }
 
-                if (order.Date == null)
+                List<Product> lista = new List<Product>();
+
+                foreach (var productId in order.ProductId!)
                 {
-                    order.Date = res.First().Date;
+                    var product = await _product.Find(p => p.Id == productId).FirstOrDefaultAsync();
+                    if (product != null)
+                    {
+                        lista.Add(product);
+                    }
                 }
 
-                if (order.Status == null)
-                {
-                    order.Status = res.First().Status;
-                }
+                order.Products = lista;
 
-                if (order.clientId == null)
-                {
-                    order.clientId = res.First().clientId;
-                }
+                order.Client = client;
 
-                if (order.productId == null)
-                {
-                    order.productId = res.First().productId;
-                }
+                await _order.ReplaceOneAsync(o => o.Id == order.Id, order);
 
+                return StatusCode(201, order);
 
-                var update = Builders<Order>.Update
-                    .Set(o => o.Id, order.Id)
-                    .Set(o => o.Date, order.Date)
-                    .Set(o => o.Status, order.Status)
-                    .Set(o => o.clientId, order.clientId)
-                    .Set(o => o.productId, order.productId)
-                    ;
-
-                await _order.UpdateOneAsync(filter, update);
-
-                return NoContent();
             }
             catch (Exception e)
             {
-                return BadRequest(e.Message);
+                return BadRequest(e.Message); ;
             }
+                
         }
 
         [HttpGet("{id}")]
