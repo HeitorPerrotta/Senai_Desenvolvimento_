@@ -1,0 +1,15 @@
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\ControleDeIventario\ControleDeIventario\bin\Debug\net8.0\ControleDeIventario.exe
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\ControleDeIventario\ControleDeIventario\bin\Debug\net8.0\ControleDeIventario.deps.json
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\ControleDeIventario\ControleDeIventario\bin\Debug\net8.0\ControleDeIventario.runtimeconfig.json
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\ControleDeIventario\ControleDeIventario\bin\Debug\net8.0\ControleDeIventario.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\ControleDeIventario\ControleDeIventario\bin\Debug\net8.0\ControleDeIventario.pdb
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\ControleDeIventario\ControleDeIventario\obj\Debug\net8.0\ControleDeIventario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\ControleDeIventario\ControleDeIventario\obj\Debug\net8.0\ControleDeIventario.AssemblyInfoInputs.cache
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\ControleDeIventario\ControleDeIventario\obj\Debug\net8.0\ControleDeIventario.AssemblyInfo.cs
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\ControleDeIventario\ControleDeIventario\obj\Debug\net8.0\ControleDeIventario.csproj.CoreCompileInputs.cache
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\ControleDeIventario\ControleDeIventario\obj\Debug\net8.0\ControleDeIventario.sourcelink.json
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\ControleDeIventario\ControleDeIventario\obj\Debug\net8.0\ControleDeIventario.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\ControleDeIventario\ControleDeIventario\obj\Debug\net8.0\refint\ControleDeIventario.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\ControleDeIventario\ControleDeIventario\obj\Debug\net8.0\ControleDeIventario.pdb
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\ControleDeIventario\ControleDeIventario\obj\Debug\net8.0\ControleDeIventario.genruntimeconfig.cache
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\ControleDeIventario\ControleDeIventario\obj\Debug\net8.0\ref\ControleDeIventario.dll

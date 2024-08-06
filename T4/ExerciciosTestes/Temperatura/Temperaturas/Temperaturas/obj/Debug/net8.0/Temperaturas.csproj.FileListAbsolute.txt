@@ -1,0 +1,15 @@
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\Temperaturas\Temperaturas\bin\Debug\net8.0\Temperaturas.exe
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\Temperaturas\Temperaturas\bin\Debug\net8.0\Temperaturas.deps.json
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\Temperaturas\Temperaturas\bin\Debug\net8.0\Temperaturas.runtimeconfig.json
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\Temperaturas\Temperaturas\bin\Debug\net8.0\Temperaturas.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\Temperaturas\Temperaturas\bin\Debug\net8.0\Temperaturas.pdb
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\Temperaturas\Temperaturas\obj\Debug\net8.0\Temperaturas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\Temperaturas\Temperaturas\obj\Debug\net8.0\Temperaturas.AssemblyInfoInputs.cache
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\Temperaturas\Temperaturas\obj\Debug\net8.0\Temperaturas.AssemblyInfo.cs
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\Temperaturas\Temperaturas\obj\Debug\net8.0\Temperaturas.csproj.CoreCompileInputs.cache
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\Temperaturas\Temperaturas\obj\Debug\net8.0\Temperaturas.sourcelink.json
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\Temperaturas\Temperaturas\obj\Debug\net8.0\Temperaturas.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\Temperaturas\Temperaturas\obj\Debug\net8.0\refint\Temperaturas.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\Temperaturas\Temperaturas\obj\Debug\net8.0\Temperaturas.pdb
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\Temperaturas\Temperaturas\obj\Debug\net8.0\Temperaturas.genruntimeconfig.cache
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\ExerciciosTestes\Temperatura\Temperaturas\Temperaturas\obj\Debug\net8.0\ref\Temperaturas.dll
