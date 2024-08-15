@@ -1,0 +1,30 @@
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\obj\Debug\net8.0\Sprint - Revisão.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\obj\Debug\net8.0\Sprint - Revisão.AssemblyInfoInputs.cache
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\obj\Debug\net8.0\Sprint - Revisão.AssemblyInfo.cs
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\obj\Debug\net8.0\Sprint - Revisão.csproj.CoreCompileInputs.cache
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\obj\Debug\net8.0\Sprint - Revisão.sourcelink.json
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\bin\Debug\net8.0\Sprint - Revisão.exe
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\bin\Debug\net8.0\Sprint - Revisão.deps.json
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\bin\Debug\net8.0\Sprint - Revisão.runtimeconfig.json
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\bin\Debug\net8.0\Sprint - Revisão.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\bin\Debug\net8.0\Sprint - Revisão.pdb
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\obj\Debug\net8.0\Sprint - Revisão.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\obj\Debug\net8.0\refint\Sprint - Revisão.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\obj\Debug\net8.0\Sprint - Revisão.pdb
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\obj\Debug\net8.0\Sprint - Revisão.genruntimeconfig.cache
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\obj\Debug\net8.0\ref\Sprint - Revisão.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Revisão Carlos\obj\Debug\net8.0\Sprint - Revisão.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Revisão Carlos\obj\Debug\net8.0\Sprint - Revisão.AssemblyInfoInputs.cache
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Revisão Carlos\obj\Debug\net8.0\Sprint - Revisão.AssemblyInfo.cs
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Revisão Carlos\obj\Debug\net8.0\Sprint - Revisão.csproj.CoreCompileInputs.cache
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Revisão Carlos\obj\Debug\net8.0\Sprint - Revisão.sourcelink.json
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Revisão Carlos\obj\Debug\net8.0\Sprint - Revisão.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Revisão Carlos\obj\Debug\net8.0\refint\Sprint - Revisão.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Revisão Carlos\obj\Debug\net8.0\Sprint - Revisão.pdb
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Revisão Carlos\bin\Debug\net8.0\Sprint - Revisão.exe
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Revisão Carlos\bin\Debug\net8.0\Sprint - Revisão.deps.json
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Revisão Carlos\bin\Debug\net8.0\Sprint - Revisão.runtimeconfig.json
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Revisão Carlos\bin\Debug\net8.0\Sprint - Revisão.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Revisão Carlos\bin\Debug\net8.0\Sprint - Revisão.pdb
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Revisão Carlos\obj\Debug\net8.0\Sprint - Revisão.genruntimeconfig.cache
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Revisão Carlos\obj\Debug\net8.0\ref\Sprint - Revisão.dll

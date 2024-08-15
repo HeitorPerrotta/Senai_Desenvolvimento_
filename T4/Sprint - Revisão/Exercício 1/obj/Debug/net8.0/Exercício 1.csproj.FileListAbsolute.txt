@@ -1,0 +1,15 @@
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Exercício 1\bin\Debug\net8.0\Exercício 1.exe
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Exercício 1\bin\Debug\net8.0\Exercício 1.deps.json
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Exercício 1\bin\Debug\net8.0\Exercício 1.runtimeconfig.json
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Exercício 1\bin\Debug\net8.0\Exercício 1.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Exercício 1\bin\Debug\net8.0\Exercício 1.pdb
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Exercício 1\obj\Debug\net8.0\Exercício 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Exercício 1\obj\Debug\net8.0\Exercício 1.AssemblyInfoInputs.cache
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Exercício 1\obj\Debug\net8.0\Exercício 1.AssemblyInfo.cs
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Exercício 1\obj\Debug\net8.0\Exercício 1.csproj.CoreCompileInputs.cache
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Exercício 1\obj\Debug\net8.0\Exercício 1.sourcelink.json
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Exercício 1\obj\Debug\net8.0\Exercício 1.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Exercício 1\obj\Debug\net8.0\refint\Exercício 1.dll
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Exercício 1\obj\Debug\net8.0\Exercício 1.pdb
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Exercício 1\obj\Debug\net8.0\Exercício 1.genruntimeconfig.cache
+C:\Users\54395989870\Desktop\Senai_Desenvolvimento_\T4\Sprint - Revisão\Exercício 1\obj\Debug\net8.0\ref\Exercício 1.dll
