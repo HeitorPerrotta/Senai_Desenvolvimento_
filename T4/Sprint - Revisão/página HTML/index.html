@@ -3,34 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>layout</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <header>
-        <div>
-            <nav class="alinhamento">
-              <div>
-                <a class="link_logo" href="#">
-                  <img class="logo" src="assets/logo-branca.png" alt="Logotipo da Hospedagens.com">
-                </a>
-              </div>    
-              <div>
-                <ul class="menu" id="itens">
-                  <li><a class="home" href="#">Hotéis</a></li>
-                  <li><a href="#">Entrar</a></li>
-                  <li><a href="#">Contato</a></li>
-                  <li><a href="#contato">Cadastrar-se</a></li>
-                </ul>
-              </div>
-            </nav>
-          </div>
+    <header class="container-header">
+      <nav class="nAv">
+        <img class="logo-header" src="./Assets/logo-branca.png" alt="" />
+        <a class="content-header" href="">Hotéis</a>
+        <a class="content-header" href="">Contato</a>
+        <a class="content-header" href="">Entrar</a>
+        <div class="cadastro-header">
+          <a class="content-header" href="">Cadastrar-se</a>
+        </div>
+      </nav>
+      <div class="container-headerTexto">
+        <h1 class="h1-headerTexto">As melhores hospedagens do Brasil</h1>
+        <p class="text-headerTexto">
+          Mais de 500 mil reservas esperando por você! Basta <br />procurar pelo
+          local ideal, e realizar a viagem dos seus <br />sonhos.
+        </p>
+        <img id="image-headerTexto" src="./Assets/mapa-brasil.png" alt="" />
+      </div>
     </header>
+
+      <main>
+        <section class="container">
+          <section class="container-main2">
+            <article class="article-main2">
+              <h2 class="h2-main">
+                Venha conferir os hotéis com as melhores promoções do país.
+              </h2>
+              <p class="text-main">
+                Não perca tempo e venha conferir o que há de de melhor na
+                hotelagem do Brasil.
+              </p>
+            </article>
+            <img id="image-mainBaixo" src="./Assets/travel.png" alt="" />
+          </section>
+        </section>
+      </main>
+
+    <footer>
+      <div class="footer-top">
+        <h2 class="h2-footer">Fale com um de nossos acessores</h2>
+        <p class="text1-footer">hospedagens@contato.com</p>
+        <p class="text2-footer">(11)0800-707-0707</p>
+      </div>
+      <div class="footer-bottom">
+        <img id="logo-footer" src="./assets/logo-preta.png" alt="" />
+      </div>
+    </footer>
   </body>
 </html>
