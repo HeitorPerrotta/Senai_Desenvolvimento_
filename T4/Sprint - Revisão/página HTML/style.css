@@ -169,3 +169,52 @@ footer {
   width: 449px;
   height: 300px;
 }
+
+.container-fora-caixa {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-caixa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border: #fff solid 1px;
+  height: 50px;
+  width: 50%;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+#flutuante-forms {
+  border-right: 1px dashed black;
+  padding-right: 4.5%;
+  height: 20px;
+}
+
+#flutuante-icon {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: -16px;
+
+}
+
+#conteudo-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 3%;
+}
+
+#cards {
+  flex-basis: calc(25% - 10px);
+  margin: 5px;
+  margin-top: 4%;
+  font-family: "Lato", sans-serif;
+}
+
+#conteudo-titulo {
+  margin-bottom: 12px;
+}
