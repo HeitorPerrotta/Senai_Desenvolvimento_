@@ -6,7 +6,6 @@
 
 .container-header {
   background: linear-gradient(to bottom right, #1e52b4, #002777);
-  height: 450px;
 }
 
 .nAv {
@@ -16,6 +15,27 @@
   gap: 30px;
   color: #fff;
   margin-right: 100px;
+}
+
+/* Estilos do menu quando o menu está visível */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Menu de navegação */
+.nAv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .container {
@@ -37,8 +57,8 @@
   text-decoration: none;
 }
 
-.content-header a :hover {
-  border-bottom: 2px;
+.content-header:hover {
+  border-bottom: 2px solid #fff;
   font-family: "Lato", sans-serif;
   font-weight: 600;
 }
@@ -64,6 +84,7 @@
   font-family: "Lato", sans-serif;
   font-weight: 600;
 }
+
 .text-headerTexto {
   font-size: 18px;
   letter-spacing: 1px;
@@ -104,7 +125,7 @@
 }
 
 .footer-top {
-  background-color: #009C3B;
+  background-color: #009c3b;
   height: 163px;
 }
 
@@ -170,6 +191,15 @@ footer {
   height: 300px;
 }
 
+.card-button {
+  background-color: rgb(11, 172, 11);
+  color: #fff;
+  padding: 10px;
+  border: rgb(11, 172, 11) solid 1px;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+}
+
 .container-fora-caixa {
   display: flex;
   justify-content: space-around;
@@ -189,17 +219,39 @@ footer {
   font-family: "Lato", sans-serif;
 }
 
-#flutuante-forms {
+.texto-viagem {
+  width: 260px;
+}
+
+.section-flutuante {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flutuante-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border: #fff solid 1px;
+  height: 50px;
+  width: 50%;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+.flutuante-forms {
   border-right: 1px dashed black;
   padding-right: 4.5%;
   height: 20px;
 }
 
-#flutuante-icon {
+.flutuante-icon {
   position: absolute;
   margin-top: 3px;
   margin-left: -16px;
-
 }
 
 #conteudo-container {
@@ -213,8 +265,202 @@ footer {
   margin: 5px;
   margin-top: 4%;
   font-family: "Lato", sans-serif;
+  width: 260px;
 }
 
 #conteudo-titulo {
   margin-bottom: 12px;
+}
+
+#img-viagem {
+  height: 173px;
+  width: 260px;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .nAv {
+    margin-right: 50px;
+  }
+
+  .logo-header {
+    margin-right: 0;
+  }
+
+  #image-headerTexto {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .container-headerTexto {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .container-caixa {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nAv {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .logo-header {
+    margin: 0 auto;
+    display: none;
+  }
+
+  .content-header {
+    margin-top: 10px;
+  }
+
+  #image-mainBaixo {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: -20px;
+    width: 360px;
+  }
+
+  #image-headerTexto {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .container-main2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .h2-main {
+    width: 360px;
+  }
+
+  .text-main {
+    width: 360px;
+  }
+
+  .container-headerTexto {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-caixa {
+    flex-direction: column;
+    width: 100%;
+    box-shadow: none;
+    padding: 15px;
+  }
+
+  #conteudo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #cards {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .container-main2 {
+    padding: 20px;
+  }
+
+  .image-mainBaixo {
+    width: 100%;
+    max-width: 300px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1-headerTexto {
+    font-size: 24px;
+  }
+
+  .text-headerTexto {
+    font-size: 16px;
+  }
+
+  .flutuante-container {
+    margin-top: 20px;
+  }
+
+  .container-main2 {
+    padding: 10px;
+  }
+
+  .image-mainBaixo {
+    max-width: 100%;
+  }
+}
+
+/* Estilos do menu hambúrguer */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.menu-toggle .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: 0.3s ease;
+}
+
+/* Menu de navegação responsivo */
+@media (max-width: 768px) {
+  .nAv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #1e52b4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nAv.active {
+    transform: translateX(0);
+  }
+
+  .logo-header {
+    margin: 20px;
+  }
+
+  .content-header {
+    font-size: 24px;
+  }
+
+  .cadastro-header {
+    padding: 10px 20px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
 }

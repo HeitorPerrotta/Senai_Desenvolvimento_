@@ -6,8 +6,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nAv");
+
+      menuToggle.addEventListener("click", function () {
+        menuToggle.classList.toggle("active");
+        nav.classList.toggle("active");
+      });
+    });
+  </script>
+
   <body>
     <header class="container-header">
+      <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
       <nav class="nAv">
         <img class="logo-header" src="./Assets/logo-branca.png" alt="" />
         <a class="content-header" href="">Hotéis</a>
@@ -27,78 +46,116 @@
       </div>
     </header>
 
-      <main>
-        <section class="container-fora-caixa">
-          <div class= "container-caixa">
-            <p id="flutuante-forms"><img id="flutuante-icon" src="./Assets/icons/local-icon.svg" alt="">Qual o local desejado?
-            </p>
-            <p id="flutuante-forms"><img id="flutuante-icon" src="./Assets/icons/checkout-icon.svg" alt="">Data-check in</p>
-            <p id="flutuante-forms"><img id="flutuante-icon" src="./Assets/icons/checkout-icon.svg" alt="">Data-check in</p>
-            <button id="card-button">Procurar hotel</button>
+    <main>
+      <section class="section-flutuante">
+        <div class="flutuante-container">
+          <p class="flutuante-forms">
+            <img
+              id="flutuante-icon"
+              src="./Assets/icons/local-icon.svg"
+              alt=""
+            />Qual o local desejado?
+          </p>
+          <p class="flutuante-forms">
+            <img
+              id="flutuante-icon"
+              src="./Assets/icons/checkout-icon.svg"
+              alt=""
+            />Data-check in
+          </p>
+          <p class="flutuante-forms">
+            <img
+              id="flutuante-icon"
+              src="./Assets/icons/checkout-icon.svg"
+              alt=""
+            />Data-check in
+          </p>
+          <button class="card-button">Procurar hotel</button>
         </div>
+      </section>
+
+      <section id="conteudo-container">
+        <div id="cards">
+          <img id="img-viagem" src="./assets/angradoreis.jpg" alt="" />
+          <h3 id="conteudo-titulo">Angra dos reis</h3>
+          <p class="texto-viagem">
+            Desfrute de um paraíso tropical em nossa pousada! Relaxe em nossas
+            piscinas com vista para o mar.
+          </p>
+        </div>
+        <div id="cards">
+          <img id="img-viagem" src="./assets/arraial.jpg" alt="" />
+          <h3 id="conteudo-titulo">Arraial do cabo</h3>
+          <p class="texto-viagem">
+            Conecte-se com a natureza em Arraial do Cabo!Nossa pousada está
+            localizada próxima às praias.
+          </p>
+        </div>
+        <div id="cards">
+          <img id="img-viagem" src="./assets/trezetilias.jpg" alt="" />
+          <h3 id="conteudo-titulo">Treza tílias</h3>
+          <p class="texto-viagem">
+            Viva a experiência de um vilarejo europeu no Brasil! Nossa pousada
+            em Treza Tílias é perfeita
+          </p>
+        </div>
+        <div id="cards">
+          <img id="img-viagem" src="./assets/ipanema.jpg" alt="" />
+          <h3 id="conteudo-titulo">Ipanema</h3>
+          <p class="texto-viagem">
+            Explore a rica cultura e históri de Ipanema! Nossa pousada é o ponto
+            de partida ideal para conhecer.
+          </p>
+        </div>
+        <div id="cards">
+          <img id="img-viagem" src="./assets/angradoreis.jpg" alt="" />
+          <h3 id="conteudo-titulo">Angra dos reis</h3>
+          <p class="texto-viagem">
+            Desfrute de um paraíso tropical em nossa pousada! Relaxe em nossas
+            piscinas com vista para o mar.
+          </p>
+        </div>
+        <div id="cards">
+          <img id="img-viagem" src="./assets/arraial.jpg" alt="" />
+          <h3 id="conteudo-titulo">Arraial do cabo</h3>
+          <p class="texto-viagem">
+            Conecte-se com a natureza em Arraial do Cabo! Nossa pousada está
+            localizada próxima às praias.
+          </p>
+        </div>
+        <div id="cards">
+          <img id="img-viagem" src="./assets/trezetilias.jpg" alt="" />
+          <h3 id="conteudo-titulo">Treza tílias</h3>
+          <p class="texto-viagem">
+            Viva a experiência de um vilarejo europeu no Brasil! Nossa pousada
+            em Treza Tílias é perfeita
+          </p>
+        </div>
+        <div id="cards">
+          <img id="img-viagem" src="./assets/ipanema.jpg" alt="" />
+          <h3 id="conteudo-titulo">Ipanema</h3>
+          <p class="texto-viagem">
+            Explore a rica cultura e históri de Ipanema! Nossa pousada é o ponto
+            de partida ideal para conhecer.
+          </p>
+        </div>
+      </section>
+
+      <section class="container">
+        <section class="container-main2">
+          <article class="article-main2">
+            <h2 class="h2-main">
+              Venha conferir os hotéis com as melhores promoções do país.
+            </h2>
+            <p class="text-main">
+              Não perca tempo e venha conferir o que há de de melhor na
+              hotelagem do Brasil.
+            </p>
+          </article>
+          <img id="image-mainBaixo" src="./Assets/travel.png" alt="" />
         </section>
-
-    <section id="conteudo-container">
-      <div id="cards">
-        <img id="imgRJ1" src="" alt="">
-        <h3 id="conteudo-titulo">Angra dos reis</h3>
-        <p>Desfrute de um paraíso tropical em nossa <br>pousada! Relaxe em nossas piscinas com vista <br>para o mar.</p>
-      </div>
-      <div id="cards">
-        <img id="imgRJ1" src="" alt="">
-        <h3 id="conteudo-titulo">Arraial do cabo</h3>
-        <p>Conecte-se com a natureza em Arraial do Cabo!<br> Nossa pousada está localizada próxima às praias.</p>
-      </div>
-      <div id="cards">
-        <img id="imgRJ1" src="" alt="">
-        <h3 id="conteudo-titulo">Treza tílias</h3>
-        <p>Viva a experiência de um vilarejo europeu no <br>Brasil! Nossa pousada em Treza Tílias é perfeita</p>
-      </div>
-      <div id="cards">
-        <img id="imgRJ1" src="" alt="">
-        <h3 id="conteudo-titulo">Ipanema</h3>
-        <p>Explore a rica cultura e históri de Ipanema! <br>Nossa pousada é o ponto de partida ideal para <br>conhecer.
-        </p>
-      </div>
-      <div id="cards">
-        <img id="imgRJ1" src="" alt="">
-        <h3 id="conteudo-titulo">Angra dos reis</h3>
-        <p>Desfrute de um paraíso tropical em nossa <br>pousada! Relaxe em nossas piscinas com vista <br>para o mar.</p>
-      </div>
-      <div id="cards">
-        <img id="imgRJ1" src="" alt="">
-        <h3 id="conteudo-titulo">Arraial do cabo</h3>
-        <p>Conecte-se com a natureza em Arraial do Cabo!<br> Nossa pousada está localizada próxima às praias.</p>
-      </div>
-      <div id="cards">
-        <img id="imgRJ1" src="" alt="">
-        <h3 id="conteudo-titulo">Treza tílias</h3>
-        <p>Viva a experiência de um vilarejo europeu no <br>Brasil! Nossa pousada em Treza Tílias é perfeita</p>
-      </div>
-      <div id="cards">
-        <img id="imgRJ1" src="" alt="">
-        <h3 id="conteudo-titulo">Ipanema</h3>
-        <p>Explore a rica cultura e históri de Ipanema! <br>Nossa pousada é o ponto de partida ideal para <br>conhecer.
-        </p>
-      </div>
-    </section>
-
-
-        <section class="container">
-          <section class="container-main2">
-            <article class="article-main2">
-              <h2 class="h2-main">
-                Venha conferir os hotéis com as melhores promoções do país.
-              </h2>
-              <p class="text-main">
-                Não perca tempo e venha conferir o que há de de melhor na
-                hotelagem do Brasil.
-              </p>
-            </article>
-            <img id="image-mainBaixo" src="./Assets/travel.png" alt="" />
-          </section>
-        </section>
-      </main>
+      </section>
+    </main>
 
     <footer>
       <div class="footer-top">
