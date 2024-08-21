@@ -1,0 +1,12 @@
+.toggle {
+    width: 560px;
+    height: 55px;
+    gap: 20px;
+    background-color: aliceblue;
+    border-radius: 7px;
+    border: 1px;
+    opacity: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}    

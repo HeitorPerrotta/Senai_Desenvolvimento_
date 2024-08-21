@@ -10,7 +10,6 @@
     text-transform: uppercase;
     text-align: center;
     align-self: flex-start; /* alinhamento isolado */
-    /* border: 1px solid red; */
 }
 
 .title__underscore {

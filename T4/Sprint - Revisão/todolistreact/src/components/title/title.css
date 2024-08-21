@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../../assets/Poppins/Poppins-SemiBold.ttf);
+}
+
+.title {
+  width: 100%;
+  font-family: Poppins-SemiBold;
+  font-size: 24.69px;
+  font-weight: 700;
+  line-height: 33.62px;
+  text-align: center;
+  align-self: flex-start;
+  color: aliceblue;
+}

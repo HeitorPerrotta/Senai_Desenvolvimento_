@@ -1,0 +1,21 @@
+.div-input {
+  width: 308px;
+  height: 42px;
+  top: 348px;
+  left: 565px;
+  gap: 0px;
+  border: 2px solid white;
+  border-radius: 7px;
+  opacity: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.input-text {
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #FCFCFC;
+  font-size: 15px;
+  display: flex;
+}

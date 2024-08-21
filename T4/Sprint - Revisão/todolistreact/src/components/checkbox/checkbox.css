@@ -1,0 +1,14 @@
+.checkbox {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(189, 164, 255, 1);
+    border-radius: 3px;
+    display: flex;
+    margin-left: 20px;
+}
+
+.checkbox:checked {
+    background-color: #1E123B;
+
+}

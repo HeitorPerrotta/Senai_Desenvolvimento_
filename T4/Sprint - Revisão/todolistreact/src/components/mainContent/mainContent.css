@@ -1,0 +1,10 @@
+.main-content {
+    width: 42%;
+    height: 790px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+}
