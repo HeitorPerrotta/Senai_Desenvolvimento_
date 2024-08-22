@@ -1,9 +1,8 @@
 import "./toggle.css"
 
-function Toggle({children}) {
+function Toggle() {
     return (
         <div className="toggle">
-            {children}
         </div>
     )
 }
