@@ -81,4 +81,4 @@
 //     }
 // }
 
-Console.Beep(2000,1000);
+Console.Beep(4000,5000);
